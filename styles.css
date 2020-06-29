@@ -159,6 +159,12 @@ a.hidden {
     padding: 0;
     margin: 0;
 }
+#notice a {
+    background-color: transparent;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
 
 /* Width Change */
 #width-change {
