@@ -69,6 +69,15 @@ hr {
 .container .hero-text h1 {
     font-family: Comic Sans MS;
 }
+img.logo {
+    width: 5%;
+}
+.container .hero-text a {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
 
 /* Browsing Blocks */
 .flip-card {
@@ -165,6 +174,10 @@ a.hidden {
     padding: 0;
     margin: 0;
 }
+.main_course {
+    text-decoration: underline;
+    font-weight: bold;
+}
 
 /* Width Change */
 #width-change {
@@ -195,5 +208,5 @@ a.hidden {
 }
 #notice {
     margin-top: 1%; /* If someone asks about why the #about section is 1%, this was on purpose because I don't want any spaces within that code */
-    margin-bottom: 1%; 
+    margin-bottom: 1%;
 }
