@@ -8,6 +8,7 @@ Date created: 6-22-2020 at 11:05 PM (PST)
 
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--Implementation of Responsive Design in HTML for modern browsers-->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/Banana.png">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Indie+Flower&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
@@ -23,6 +24,12 @@ Date created: 6-22-2020 at 11:05 PM (PST)
                 <a href="browse_selection.html">Browse</a>
             </div>
         </header>
+        <div class="display">
+        <div class="info">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            You are currently testing a beta feature called "Responsive Design" for PapaTebs Mask Company
+        </div>
+        </div>
         <div id="slideshow">
             <img class="slide" src="images/Avacado_Mask.jpg" alt="Avacado Mask with Standard Strap">
             <img class="slide" src="images/Black_Mask.jpg" alt="Black Mask with Standard Strap">

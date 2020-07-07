@@ -128,6 +128,7 @@ p.skipnavigation a:focus {
     font-size: 20px;
     font-family: Comic Sans MS;
     color: white;
+    max-width: 20%;
 }
 #browse_button:hover {
     background-color: turquoise;
@@ -242,10 +243,71 @@ p#quote {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 12px;
 }
 #footnotes {
     float: left;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+/* For technology devices */
+
+/* For mobile phones: */
+@media screen and (max-width:750px) {
+    #slideshow {
+        display: none;
+    }
+    #description p {
+        font-size: 30px;
+    }
+    #description {
+        width: 90%;
+    }
+    .topnav a {
+        font-size: 25px;
+    }
+    header h2 {
+        font-family: 'Coming Soon', cursive;
+        font-size: 20px;
+        float: left;
+        padding: 10px 10px;
+        color: white;
+    }
+    #logohome {
+        text-decoration: none;
+        color: white;
+    }
+    header {
+        background-color: lightskyblue;
+        overflow: auto; /* Keeps code from changing the height of the header section. Background color disappears if removed */
+    }
+    #browse_button {
+        min-width: 50%;
+        padding: 2%;
+    }
+    .display {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/* Standard screen */
+@media screen and (min-width: 751px) {
+    .display {
+        display: none;
+    }
+    #browse_button {
+        min-width: 45%;
+        padding: 2%;
+    }
+}
+
+/* Standard screen */
+@media screen and (min-width: 10000px) {
+    #browse_button {
+        padding: 1%;
+        min-width: auto;
+    }
 }
