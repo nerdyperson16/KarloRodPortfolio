@@ -196,17 +196,42 @@ p.sizediscretion {
     font-family: Ink Free;
     font-weight: bold;
 }
+.contactinfo {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    font-family: Comic Sans MS;
+    margin-top: 3%;
+}
+.customimages {
+    float: left;
+    width: 100%;
+    margin-left: 1%;
+    font-family: Comic Sans MS;
+}
+.customimages p {
+    text-align: center;
+}
+#centertext_custom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
 /* Warning Section */
 .alert {
     padding: 20px;
     background-color: #f44336;
     color: white;
+    font-size: 17px;
 }
 .info {
     padding: 20px;
     background-color: turquoise;
     color: black;
+    font-size: 17px;
 }
 .closebtn {
     margin-left: 15px;
@@ -220,14 +245,6 @@ p.sizediscretion {
 }
 .closebtn:hover {
     color: black;
-}
-.contactinfo {
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-    font-family: Comic Sans MS;
 }
 
 /* Terms of conditions and quote */
@@ -266,7 +283,7 @@ p#quote {
         width: 90%;
     }
     .topnav a {
-        font-size: 25px;
+        font-size: 20px;
     }
     header h2 {
         font-family: 'Coming Soon', cursive;
@@ -299,8 +316,7 @@ p#quote {
         display: none;
     }
     #browse_button {
-        min-width: 45%;
-        padding: 2%;
+        padding: 1%;
     }
 }
 
