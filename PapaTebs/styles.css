@@ -19,8 +19,16 @@ html, body {
     height: 100%;
     overflow-x: hidden; /* Removes scrolling on site. Needed due to slideshow accessibility */
 }
+/* Some hr code provided by W3Schools.com */ /* HTML5 supported */
 hr {
-    border: 1px thin black; /* HTML5 supported */
+    border: 1px thin black;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 /* Header Section */
@@ -218,6 +226,9 @@ p.sizediscretion {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+}
+#you {
+    color: red;
 }
 
 /* Warning Section */
