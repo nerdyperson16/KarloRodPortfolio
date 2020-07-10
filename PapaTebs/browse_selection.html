@@ -20,6 +20,15 @@ Date created: 6-22-2020 at 11:05 PM (PST)
     <p class="skipnavigation"><a href="browse_selection.html">Skip Navigation</a></p>
     <div class="container">
 
+    <!--Thanks StackOverflow community (https://stackoverflow.com/questions/19999388/check-if-user-is-using-ie) for help with Internet Explorer concerns-->
+    <script type="text/javascript">
+        var ua = window.navigator.userAgent;
+        var isIE = /MSIE|Trident/.test(ua);
+        if ( isIE ) {
+            document.write("You're currently using Internet Explorer which is an outdated browser currently. Some features may not be usable and will not be considered for repairs. Thank you and sorry for the inconvenience. Please check out Google Chrome, Mozilla Firefox, Microsoft Edge, etc. for newer browsers.")
+        }
+    </script>
+
         <header>
             <h2><a id="logohome" href="index.html">PapaTebs Mask Company</a></h2>
             <div class="topnav">

@@ -17,6 +17,16 @@ Date created: 6-22-2020 at 11:05 PM (PST)
 <body>
     <p class="skipnavigation"><a href="index.html">Skip Navigation</a></p>
     <div class="container">
+
+    <!--Thanks StackOverflow community (https://stackoverflow.com/questions/19999388/check-if-user-is-using-ie) for help with Internet Explorer concerns-->
+    <script type="text/javascript">
+        var ua = window.navigator.userAgent;
+        var isIE = /MSIE|Trident/.test(ua);
+        if ( isIE ) {
+            document.write("You're currently using Internet Explorer which is an outdated browser currently. Some features may not be usable and will not be considered for repairs. Thank you and sorry for the inconvenience. Please check out Google Chrome, Mozilla Firefox, Microsoft Edge, etc. for newer browsers.")
+        }
+    </script>
+
         <header>
             <h2><a id="logohome" href="index.html">PapaTebs Mask Company</a></h2>
             <div class="topnav">
@@ -44,7 +54,7 @@ Date created: 6-22-2020 at 11:05 PM (PST)
             <p>That's why we're making masks! Ever since we released our reusable prototype, we've been making masks like crazy! We've created over 50 masks every week and what's better is that it's reusable! Simply put it in the washer after use and instead of throwing it away... Put it in your bag for another use for another day.</p>
             <p>There's so many designs to choose from and we can't wait to make you your very own mask. From our variety of options that have been custom handcrafted, PapaTebs is here for you to create your very own mask.</p>
             <form action="browse_selection.html">
-                <button id="browse_button">Browse&nbsp;our&nbsp;selection</button>
+                <button id="browse_button">Browse our selection</button>
             </form>
         </div>
     </div>
