@@ -15,7 +15,8 @@ html, body, header, footer, h2 {
 
 /* Some automatic code to help */
 html, body {
-    width: 100%;
+    min-width: 424px;
+    /*width: 100%;*/
     height: 100%;
     overflow-x: hidden; /* Removes scrolling on site. Needed due to slideshow accessibility */
 }
@@ -44,7 +45,7 @@ header h2 {
     color: white;
 }
 header {
-    background-color: lightskyblue;
+    background-color: black;
     overflow: auto; /* Keeps code from changing the height of the header section. Background color disappears if removed */
 }
 .topnav {
@@ -54,7 +55,7 @@ header {
   }
 .topnav a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
@@ -179,7 +180,7 @@ p.skipnavigation a:focus {
     color: black;
 }
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: black;
     color: white;
     transform: rotateY(180deg);
 }
@@ -197,6 +198,10 @@ p.skipnavigation a:focus {
 .browse_name_size {
     margin-left: 1%;
     font-family: Comic Sans MS;
+}
+.browse_status_out {
+    color: red;
+    font-weight: bold;
 }
 p.sizediscretion {
     text-align: center;
@@ -308,7 +313,6 @@ p#quote {
         color: white;
     }
     header {
-        background-color: lightskyblue;
         overflow: auto; /* Keeps code from changing the height of the header section. Background color disappears if removed */
     }
     #browse_button {
@@ -327,14 +331,6 @@ p#quote {
         display: none;
     }
     #browse_button {
-        padding: 1%;
-    }
-}
-
-/* Standard screen */
-@media screen and (min-width: 10000px) {
-    #browse_button {
-        padding: 1%;
-        min-width: auto;
+        display: none;
     }
 }
