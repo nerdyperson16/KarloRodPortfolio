@@ -203,6 +203,10 @@ p.skipnavigation a:focus {
     color: red;
     font-weight: bold;
 }
+.browse_status_limited {
+    color: yellow;
+    font-weight: bold;
+}
 p.sizediscretion {
     text-align: center;
     font-size: 20px;
