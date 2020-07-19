@@ -213,15 +213,6 @@ p.sizediscretion {
     font-family: Ink Free;
     font-weight: bold;
 }
-.contactinfo {
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
-    font-family: Comic Sans MS;
-    margin-top: 3%;
-}
 .customimages {
     float: left;
     width: 100%;
@@ -291,6 +282,40 @@ p#quote {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+.track {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.track p {
+    font-family: Comic Sans MS;
+    text-align: center;
+    font-size: 18px;
+}
+.track p a {
+    color: black;
+    text-decoration: none;
+    background-color: lightgreen;
+    padding: 3px;
+    border-radius: 5px;
+}
+.track p a:hover {
+    background-color: green;
+}
+
+/* iframe utility */
+#trackingutility {
+    width: 20%;
+    height: 620px;
+    margin: 0;
+    padding: 0;
+}
+.displayutility {
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Modal Boxes */
