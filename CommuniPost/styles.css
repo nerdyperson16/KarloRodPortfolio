@@ -1,0 +1,167 @@
+/*
+    All Copyrights Reserved 2020 Karlo Rodriguez
+    CommuniPost - Stylesheet
+    4-Spaces Organization
+    Date created: July 28, 2020 at 12:28 AM (PST) "I know that's late"
+    Made with love and Thai Tea
+*/
+
+/* Reset Styles */
+html, body, header, header p, #navigation, #navigation a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Skip Navigation */
+p.skipnavigation {
+    float: right;
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+}
+p.skipnavigation a:focus {
+    top: 0.4em;
+    left: auto;
+    right: 0.4em;
+    z-index: 2;
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+
+/* Container section */
+.container {
+    width: 75%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.container p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header section */
+header p#title {
+    font-family: 'Inconsolata', monospace;
+    font-style: italic;
+    font-size: 34px;
+    padding: 0.5%;
+    text-align: center;
+}
+#title a {
+    color: black;
+    text-decoration: none;
+}
+#title_motto {
+    font-size: 12px;
+    color: goldenrod;
+}
+
+/* Footer section */
+footer p {
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0.5%;
+    text-align: center;
+}
+
+/* Navigation section */
+#navigation {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.3%;
+}
+#navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: 'Epilogue', sans-serif;
+}
+#navigation a:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+}
+
+/* Body section */
+body {
+    background-image: url("images/Body_Image.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-info p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+}
+hr {
+    width: 50%;
+    border: 1px thin black;
+}
+#main-info h2 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Blog post section */
+.blogpost {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+.blogpost img {
+    width: 10%;
+    float: left;
+}
+.blogpost p {
+    width: 80%;
+    font-family: 'Varta', sans-serif;
+}
+.blogpost.datecreated {
+    font-family: 'Playfair Display', serif;
+}
+
+/* For technology devices */
+
+/* For smaller devices */
+@media screen and (max-width:1270px) {
+    #title_motto {
+        display: none;
+    }
+}
+
+/* For phone compatibility */
+@media screen and (max-width:944px) {
+    #title_motto {
+        display: none;
+    }
+    body {
+        min-width: 776px;
+    }
+    #main-info p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .blogpost img {
+        display: none;
+    }
+    .blogpost h3 {
+        text-align: center;
+    }
+    #main-info h2 {
+        text-align: center;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
