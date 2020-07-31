@@ -109,6 +109,10 @@ hr {
     margin-right: auto;
     font-family: 'Work Sans', sans-serif;
 }
+.postal_bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* Blog post section */
 .blogpost {
@@ -142,6 +146,19 @@ hr {
 
 /* For phone compatibility */
 @media screen and (max-width:944px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-image: none;
+        overflow-x: hidden;
+    }
     #title_motto {
         display: none;
     }
@@ -160,6 +177,9 @@ hr {
     }
     footer p {
         font-size: 13px;
+    }
+    footer {
+        width: 100%;
     }
     #navigation {
         width: 100%;
