@@ -145,9 +145,6 @@ hr {
     #title_motto {
         display: none;
     }
-    body {
-        min-width: 776px;
-    }
     #main-info p {
         font-size: 18px;
         text-align: center;
@@ -163,5 +160,15 @@ hr {
     }
     footer p {
         font-size: 13px;
+    }
+    #navigation {
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width:400px) {
+    body {
+        min-width: 400px;
     }
 }
