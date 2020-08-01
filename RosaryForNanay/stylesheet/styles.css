@@ -1,0 +1,225 @@
+/*
+    Rosary for Nanay - Stylesheet Webpage
+    karlostevenr.page/RosaryforNanay
+    Edited via Microsoft Visual Studio Code
+    4-spaced organization code
+    Date Created: August 1, 2020 at 12:40 AM (PST) "I know, that's late"
+    Made with love and Thai Tea w/ Lychee Jelly
+*/
+
+/* Reset styles */
+html, body, .container, #logo, #navigation {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 100%;
+}
+
+/* Skip Navigation section */
+p.skipnavigation {
+    float: right;
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+    color: black;
+    text-decoration: none;
+}
+p.skipnavigation a:focus {
+    top: 0.4em;
+    left: auto;
+    right: 0.4em;
+    z-index: 2;
+    float: left;
+}
+
+/* Header section */
+#logo img {
+    height: 65px;
+    float: left;
+}
+
+/* Header section - Navigation */ /* Some code was used to help with navigation - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right */
+#navigation {
+    overflow: hidden;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+}
+#navigation a {
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 3%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#navigation_right {
+    float: right;
+}
+#navigation a:hover {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+#navigation a:visited {
+    background-color: white;
+    border-radius: 5px;
+}
+#navigation a:active {
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Body section */
+h3#download {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+#mainsection {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainsection h3 {
+    font-family: 'Varta', sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+#Nathan_Long_Highlight p {
+    width: fit-content;
+    background-color: yellow;
+}
+#Nathan_Long p {
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Ordered lists section */
+li {
+    margin: 1.5%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+ol > li { /* To help the ordered lists for numbers to become bold. Audited code that isn't required - https://stackoverflow.com/questions/21369843/is-there-any-way-to-make-numbers-in-ordered-list-bold*/
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
+ol > li:before { /* To help the ordered lists for numbers to become bold. Audited code that isn't required - https://stackoverflow.com/questions/21369843/is-there-any-way-to-make-numbers-in-ordered-list-bold*/
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
+
+/* Warning Section */
+.info {
+    padding: 20px;
+    background-color: turquoise;
+    color: black;
+    font-size: 17px;
+}
+.info a {
+    color: black;
+    text-decoration: none;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+
+/* Responsive Design section */
+
+/* For mobile phones: */
+@media screen and (max-width:770px) {
+    #logo img {
+        float: none;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #navigation {
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #navigation a {
+        margin: 0;
+        padding: 3%;
+        float: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    #navigation_right {
+        float: none;
+    }
+    #navigation a:hover {
+        background-color: gainsboro;
+        border-radius: 50px;
+    }
+    #navigation a:visited {
+        background-color: white;
+        border-radius: 5px;
+    }
+    #navigation a:active {
+        background-color: white;
+        border-radius: 5px;
+    }
+    #download {
+        display: none;
+    }
+    #mainsection {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 18px;
+    }
+    #Nathan_Long_Highlight p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .display {
+        display: none;
+    }
+}
+
+/* For smaller mobile phones: */
+@media screen and (max-width:572px) {
+    a#main {
+        display: none;
+    }
+    .display {
+        display: block;
+    }
+}
+
+/* For even smaller mobile phones: */
+@media screen and (max-width:446px) {
+    body {
+        min-width: 446px;
+    }
+    .display {
+        display: block;
+    }
+}
+
+/* Standard screen */
+@media screen and (min-width: 771px) {
+    .display {
+        display: none;
+    }
+}
