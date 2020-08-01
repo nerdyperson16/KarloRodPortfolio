@@ -95,6 +95,10 @@ h3#download {
 #Nathan_Long p {
     font-family: 'Dosis', sans-serif;
 }
+p#howto {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 /* Ordered lists section */
 li {
@@ -195,6 +199,11 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
     .display {
         display: none;
     }
+    p#howto {
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 15px;
+    }
 }
 
 /* For smaller mobile phones: */
@@ -204,6 +213,11 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
     }
     .display {
         display: none;
+    }
+    p#howto {
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 17px;
     }
 }
 
