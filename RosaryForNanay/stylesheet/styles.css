@@ -203,14 +203,29 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
         display: none;
     }
     .display {
-        display: block;
+        display: none;
     }
 }
 
 /* For even smaller mobile phones: */
-@media screen and (max-width:446px) {
+@media screen and (max-width:420px) {
+    #navigation a {
+        margin: 0;
+        padding: 3%;
+        float: none;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .display {
+        display: none;
+    }
+}
+
+/* For even even smaller mobile phones: */
+@media screen and (max-width:390px) {
     body {
-        min-width: 446px;
+        min-width: 390px;
     }
     .display {
         display: block;
