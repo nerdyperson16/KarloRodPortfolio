@@ -23,9 +23,36 @@
             if ( isIE ) {
                 document.write("You're currently using Internet Explorer which is now an outdated browser currently from our organization. Go ahead and get some Thai Tea and look up some new browsers like Google Chrome (coder recommended), Microsoft Edge (ehh...), and Mozilla Firefox (that's ok!).")
             }
+            function ee(sw) {
+                var pic;
+                if (sw == 1) {
+                    pic = "images/Dinosaur.png"
+                    pic2 = "images/Laptop.png"
+                    pic3 = "images/Gudetama.gif"
+                    pic4 = "images/BabyYoda.png"
+                    pic5 = "images/BTS.png"
+                    pic6 = "images/Sinigang.png"
+                } else {
+                    pic = ""
+                    pic2 = ""
+                    pic3 = ""
+                    pic4 = ""
+                    pic5 = ""
+                    pic6 = ""
+                }
+                document.getElementById('Nathan_Dinosaur').src = pic;
+                document.getElementById('Karlo_Laptop').src = pic2;
+                document.getElementById('Kelcie_Gudetama').src = pic3;
+                document.getElementById('Aaron_BabyYoda').src = pic4;
+                document.getElementById('Kathryn_KPopBTS').src = pic5;
+                document.getElementById('JC_Sinigang').src = pic6;
+            }
         </script>
         <header>
-        <a id="logo" href="index.html"><img src="images/Logo.PNG" alt="Logo for Rosary for Nanay"></a>
+        <a id="logo_input" href="#logo">
+            <input type="image" id="logo" src="images/Logo.PNG" alt="Logo for Rosary for Nanay" href="index.html" onclick="ee(1)" />
+        </a>
+        <!--<a id="logo" href="index.html"><img src="images/Logo.PNG" alt="Logo for Rosary for Nanay"></a>-->
         <div id="navigation">
             <div id="navigation_right">
                 <a id="main" href="index.html">Home</a>
@@ -56,42 +83,42 @@
                 <li><span class="bold">Say three Hail Marys for Faith, Hope, and Charity (3x):</span> “Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
             </ol>
-            <h3 id="JC"><span class="bold"><mark>The First Joyful Mystery – The Annunciation</mark>: (JC)</span></h3>
+            <h3 id="JC"><span class="bold"><mark>The First Joyful Mystery – The Annunciation</mark>: (JC)</span><img id="JC_Sinigang" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
                 <li><span class="bold">Say ten Hail Marys for Faith, Hope, and Charity (10x):</span> “<mark>Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</mark> Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
-            <h3 id="Kathryn"><span class="bold"><mark>The Second Joyful Mystery – The Visitation</mark>: (Kathryn)</span></h3>
+            <h3 id="Kathryn"><span class="bold"><mark>The Second Joyful Mystery – The Visitation</mark>: (Kathryn)</span><img id="Kathryn_KPopBTS" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
                 <li><span class="bold">Say ten Hail Marys for Faith, Hope, and Charity (10x):</span> “<mark>Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</mark> Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
-            <h3 id="Karlo"><span class="bold"><mark>The Third Joyful Mystery – The Nativity of our Lord</mark>: (Karlo)</span></h3>
+            <h3 id="Karlo"><span class="bold"><mark>The Third Joyful Mystery – The Nativity of our Lord</mark>: (Karlo)</span><img id="Karlo_Laptop" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
                 <li><span class="bold">Say ten Hail Marys for Faith, Hope, and Charity (10x):</span> “<mark>Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</mark> Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
-            <h3 id="Aaron"><span class="bold"><mark>The Fourth Joyful Mystery – The Presentation</mark>: (Aaron)</span></h3>
+            <h3 id="Aaron"><span class="bold"><mark>The Fourth Joyful Mystery – The Presentation</mark>: (Aaron)</span><img id="Aaron_BabyYoda" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
                 <li><span class="bold">Say ten Hail Marys for Faith, Hope, and Charity (10x):</span> “<mark>Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</mark> Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
-            <h3 id="Kelcie"><span class="bold"><mark>The Fifth Joyful Mystery – Finding Jesus in the Temple</mark>: (Kelcie)</span></h3>
+            <h3 id="Kelcie"><span class="bold"><mark>The Fifth Joyful Mystery – Finding Jesus in the Temple</mark>: (Kelcie)</span><img id="Kelcie_Gudetama" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
                 <li><span class="bold">Say ten Hail Marys for Faith, Hope, and Charity (10x):</span> “<mark>Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</mark> Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
-            <h3 id="Nathan"><span class="bold"><mark>Litany of the Blessed Virgin Mary</mark>: (Nathan)</span></h3>
+            <h3 id="Nathan"><span class="bold"><mark>Litany of the Blessed Virgin Mary</mark>: (Nathan)</span><img id="Nathan_Dinosaur" src=""></h3>
             <div id="Nathan_Long">
                 <p><mark>Lord, have mercy on us.</mark> Christ, have mercy on us.</p>
                 <p><mark>Lord, have mercy on us</mark>. Christ hear us. Christ, graciously hear us.</p>
