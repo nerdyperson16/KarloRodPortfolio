@@ -409,6 +409,10 @@ input[type=submit]:hover {
         padding: 3%;
         font-size: 18px;
     }
+    .overlaytext {
+        width: 90%;
+
+    }
 }
 @media screen and (max-width: 830px) {
     #aboutmesection p {
@@ -442,9 +446,19 @@ input[type=submit]:hover {
         font-size: 17px;
         padding: 0.8%;
     }
+    #discretionfooter {
+        width: 90%;
+    }
+    .card {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 540px) {
     #minimumscreensize {
         display: block;
+        text-align: center;
+    }
+    .icon-bar {
+        top: 40%;
     }
 }
