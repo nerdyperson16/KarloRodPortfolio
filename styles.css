@@ -452,6 +452,9 @@ input[type=submit]:hover {
     .card {
         width: 100%;
     }
+    .overlaytext {
+        font-size: 29px;
+    }
 }
 @media screen and (max-width: 540px) {
     #minimumscreensize {
@@ -459,6 +462,11 @@ input[type=submit]:hover {
         text-align: center;
     }
     .icon-bar {
-        top: 40%;
+        top: 60%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .overlaytext {
+        font-size: 18px;
     }
 }
