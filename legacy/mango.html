@@ -1,0 +1,60 @@
+<!--
+Karlo Rodriguez Personal Webpage
+Designed using Microsoft Visual Studio Code - 4 spaces organization
+STATIC SITE ONLY
+mango.html Website
+Modal Code provided by W3Schools.com
+-->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles_mango.css">
+    <link rel="icon" href="images/Mango.png">
+    <title>Karlo Rodriguez | Mango</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=IBM+Plex+Serif:wght@600&family=Indie+Flower&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container_mango">
+        <p class="skipnavigation"><a href="index.html">Skip Navigation</a></p>
+        <div id="width-change">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <iframe src="https://www.youtube-nocookie.com/embed/5o0qkOWjkK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <a href="#" id="myBtn"><img id="mangoimage" src="images/Mango.png" alt="Mango Image"></a>
+        </div>
+        <script>
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+        <h1><a href="unknown.html">This is a link that leads to nowhere.</a></h1>
+
+        <hr>
+
+        <!--Notice About Website-->
+        <footer>
+        <p>This website was created by myself (Karlo Rodriguez) by scratch and used resources such as W3schools.com and StackOverflow to help create this website. This website is also a reference to how I can make a website for use. Quality of the site shouldn't be taken in account for when browsing this site.</p>
+        <p>Responsive Design has not been implemented on this site. Best used in desktop computers.</p>
+        <p>Contact me at: <a href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a></p>
+        <p>Is there an error or suggestion regarding my website?: <a href="mailto:contact@karlostevenr.page">contact@karlostevenr.page</a></p>
+        </footer>
+
+        </div>
+
+    </div>
+</body>
+</html>
