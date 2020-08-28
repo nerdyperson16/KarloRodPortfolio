@@ -82,6 +82,10 @@ html, body, .skipnavigation, .topnav, h3, p, #transparent_image, #image_text, .a
     background: darkgreen;
     color: black;
 }
+.volunteering {
+    background: darkblue;
+    color: black;
+}
 
 /* Skip Navigation */
 p.skipnavigation {
