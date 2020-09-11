@@ -242,6 +242,13 @@ hr {
     padding: 3%;
     font-family: 'Patrick Hand', cursive;
 }
+.overlaylink {
+    color: black;
+    text-decoration: none;
+}
+.overlaylink a:visited {
+    color: black;
+}
 
 /* Underline & bold */
 .underline_bold {
@@ -330,7 +337,7 @@ input[type=submit]:hover {
 .contact_section {
     border-radius: 5px;
     padding: 20px;
-    width: 50%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
