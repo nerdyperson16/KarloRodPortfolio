@@ -1,3 +1,9 @@
+function on5() {
+    document.getElementById("bics").style.display = "block";
+}
+function off5() {
+    document.getElementById("bics").style.display = "none";
+}
 function on4() {
     document.getElementById("nhf").style.display = "block";
 }
