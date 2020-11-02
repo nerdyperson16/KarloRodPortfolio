@@ -1,0 +1,104 @@
+/*
+PapaTebs Mask Company - CSS for HTML5 website
+Optimized for HyperText Markup Language 5 thru Microsoft Visual Studio Code
+What are you doing here viewing the site's CSS code? You must be curious on what makes this site cool?
+4-spaces organization
+Proudly created by Karlo Rodriguez using a small toaster.
+Date created: 7-9-2020 at 11:41 PM (PST)
+*/
+
+/* For technology devices */
+
+/* For mobile phones: */
+@media screen and (max-width:750px) {
+    #slideshow {
+        display: none;
+    }
+    #description p {
+        font-size: 30px;
+    }
+    #description {
+        width: 90%;
+    }
+    .topnav a {
+        font-size: 20px;
+    }
+    header h2 {
+        font-family: 'Coming Soon', cursive;
+        font-size: 20px;
+        float: left;
+        padding: 10px 10px;
+        color: white;
+    }
+    #logohome {
+        text-decoration: none;
+        color: white;
+    }
+    header {
+        overflow: auto; /* Keeps code from changing the height of the header section. Background color disappears if removed */
+    }
+    #browse_button {
+        min-width: 50%;
+        padding: 2%;
+    }
+    .display {
+        text-align: center;
+        font-size: 20px;
+    }
+    p.sizediscretion {
+        font-size: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    h1.browse_name {
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    h1.browse_name_size {
+        font-size: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    h1.customimages {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .flip-card {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flip-card-front img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .browse_size {
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Standard screen */
+@media screen and (min-width: 751px) {
+    .display {
+        display: none;
+    }
+    #browse_button {
+        display: none;
+    }
+    hr.phones {
+        display: none;
+    }
+}
