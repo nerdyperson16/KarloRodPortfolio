@@ -455,17 +455,30 @@ footer a:visited {
         width: 20%;
     }
 }
-@media screen and (max-width: 600px) { /* For devices within 700px or less */
+@media screen and (max-width: 600px) { /* For devices within 600px or less */
     img#logo {
         width: 25%;
     }
 }
-@media screen and (max-width: 462px) { /* For devices within 700px or less */
+@media screen and (max-width: 462px) { /* For devices within 462px or less */
     img#logo {
         width: 30%;
     }
     .header_sale a {
         font-size: 10px;
+    }
+}
+@media screen and (max-width: 430px) { /* For devices within 462px or less */
+    #floatright {
+        display: none;
+    }
+}
+@media screen and (max-width: 350px) { /* For devices within 350px or less */
+    #browse {
+        margin-bottom: 25px;
+    }
+    .fullsize {
+        height: 100%;
     }
 }
 @media screen and (max-width: 850px) { /* For devices within 850px or less */
