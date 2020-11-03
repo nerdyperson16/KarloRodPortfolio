@@ -4,30 +4,6 @@ html, body, header, img, a {
     padding: 0;
 }
 
-/* Alert Boxes */
-.alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
-    font-family: 'Coming Soon', cursive;
-}
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.closebtn:hover {
-    color: black;
-}
-#minimumscreensize {
-    display: none;
-}
-
 /* Skip Navigation */
 #skipNav {
     display: none;
@@ -424,7 +400,7 @@ footer a:visited {
         display: block;
         position: absolute;
         right: 0;
-        top: 4.9%;
+        top: 0;
     }
     .topnav a {
         padding: 14px 16px;
@@ -449,10 +425,46 @@ footer a:visited {
         position: relative;
         margin: auto;
     }
+    .header_sale {
+        display: none;
+    }
+    header {
+        min-height: 25%;
+    }
 }
-@media screen and (max-width: 700px) { /* For devices within 700px or less */
-    img#logo {
-        width: 20%;
+@media screen and (max-width: 877px) { /* For devices within 877px or less */
+    .topnav a {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 877px) { /* For devices within 877px or less */
+    .topnav a {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 750px) { /* For devices within 750px or less */
+    .topnav a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 650px) { /* For devices within 650px or less */
+    .topnav a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 442px) { /* For devices within 442px or less */
+    .topnav a.icon {
+        display: none;
     }
 }
 @media screen and (max-width: 600px) { /* For devices within 600px or less */
@@ -468,11 +480,6 @@ footer a:visited {
         font-size: 10px;
     }
 }
-@media screen and (max-width: 430px) { /* For devices within 462px or less */
-    #floatright {
-        display: none;
-    }
-}
 @media screen and (max-width: 350px) { /* For devices within 350px or less */
     #browse {
         margin-bottom: 25px;
@@ -480,17 +487,18 @@ footer a:visited {
     .fullsize {
         height: 100%;
     }
+    .topnav a.icon {
+        display: none;
+    }
 }
 @media screen and (max-width: 850px) { /* For devices within 850px or less */
     #purchasing p{
-        width: 50%;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
-    #purchasing ol li {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+    #purchasing ol {
+        width: 85%;
     }
 }
 @media screen and (max-width: 1500px) { /* For devices within 1500px or less */
@@ -525,18 +533,5 @@ footer a:visited {
     #floatright {
         float: right;
         margin-top: 1.5%;
-    }
-}
-@media screen and (max-width: 440px) { /* For devices within 440px or less */
-    #minimumscreensize {
-        display: block;
-        text-align: center;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 20.3%;
     }
 }
