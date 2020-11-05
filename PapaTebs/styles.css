@@ -63,10 +63,8 @@ p.skipnavigation a:focus {
     display: block;
     text-align: left;
     padding: 0;
-    font-size: 18px;
     border-radius: 0;
-    width: 8%;
-    margin-left: 0.5%;
+    margin-top: 0.25%;
 }
 .topnav {
     overflow: hidden;
@@ -78,12 +76,12 @@ p.skipnavigation a:focus {
     text-align: center;
     padding: 4px 6px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Grandstander', cursive;
 }
 #floatright {
     float: right;
-    margin-top: 0.7%;
+    margin: 0.7%;
 }
 .topnav a:hover {
     color: darkslategray;
@@ -96,10 +94,11 @@ p.skipnavigation a:focus {
     display: none;
 }
 
-/* Layout Height 100% */
-.fullsize {
+/* Layout Height 100% - This tag is disabled due to issues with small devices. As much as I want this code to be fixed, I'm not sure what the issue is.*/
+/*.fullsize { 
     height: 100vh;
-}
+    min-height: -webkit-fill-available;
+}*/ 
 
 /* Sticky Header */
 .sticky {
@@ -403,7 +402,7 @@ footer a:visited {
         top: 0;
     }
     .topnav a {
-        padding: 14px 16px;
+        padding: 12px 14px;
     }
     .topnav.responsive {
         position: relative;
@@ -416,7 +415,7 @@ footer a:visited {
     .topnav.responsive a {
         float: none;
         position: relative;
-        right: 20%;
+        right: 15%;
         display: block;
         text-align: left;
     }
@@ -430,108 +429,5 @@ footer a:visited {
     }
     header {
         min-height: 25%;
-    }
-}
-@media screen and (max-width: 877px) { /* For devices within 877px or less */
-    .topnav a {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-@media screen and (max-width: 877px) { /* For devices within 877px or less */
-    .topnav a {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-}
-@media screen and (max-width: 750px) { /* For devices within 750px or less */
-    .topnav a {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 13px;
-    }
-}
-@media screen and (max-width: 650px) { /* For devices within 650px or less */
-    .topnav a {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 442px) { /* For devices within 442px or less */
-    .topnav a.icon {
-        display: none;
-    }
-}
-@media screen and (max-width: 600px) { /* For devices within 600px or less */
-    img#logo {
-        width: 25%;
-    }
-}
-@media screen and (max-width: 462px) { /* For devices within 462px or less */
-    img#logo {
-        width: 30%;
-    }
-    .header_sale a {
-        font-size: 10px;
-    }
-}
-@media screen and (max-width: 350px) { /* For devices within 350px or less */
-    #browse {
-        margin-bottom: 25px;
-    }
-    .fullsize {
-        height: 100%;
-    }
-    .topnav a.icon {
-        display: none;
-    }
-}
-@media screen and (max-width: 850px) { /* For devices within 850px or less */
-    #purchasing p{
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #purchasing ol {
-        width: 85%;
-    }
-}
-@media screen and (max-width: 1500px) { /* For devices within 1500px or less */
-    #floatright {
-        float: right;
-        margin-top: 0.5%;
-    }
-}
-@media screen and (max-width: 1250px) { /* For devices within 1250px or less */
-    #logo {
-        width: 10%;
-    }
-    #floatright {
-        float: right;
-        margin-top: 0.8%;
-    }
-    #perlerbead {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #track p {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media screen and (max-width: 1130px) { /* For devices within 1130px or less */
-    #logo {
-        width: 15%;
-    }
-    #floatright {
-        float: right;
-        margin-top: 1.5%;
     }
 }
