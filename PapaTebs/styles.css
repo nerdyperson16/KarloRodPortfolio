@@ -365,6 +365,14 @@ p#customimgtext {
 #purchasing_content {
     display: inline-block;
 }
+#shortenbeta {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#purchasing h3 {
+    font-family: 'Schoolbell', cursive;
+}
 
 /* Exclusions & Quote */
 #quote {
