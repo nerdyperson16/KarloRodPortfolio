@@ -261,6 +261,12 @@ img {
     color: yellow;
 }
 
+/* iframe tag */
+iframe {
+    height: 530px;
+    width: 300px;
+}
+
 /* All Groups */
 p.description {
     font-family: 'Syne Mono', monospace;
@@ -331,6 +337,14 @@ p#customimgtext {
     font-family: 'Schoolbell', cursive;
 }
 #track a {
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+    font-family: 'Coming Soon', cursive;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+#preorderbutton {
     background-color: lightskyblue;
     text-decoration: none;
     color: black;
