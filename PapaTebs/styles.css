@@ -485,3 +485,16 @@ footer a:visited {
         min-height: 25%;
     }
 }
+@media screen and (max-width: 400px) { /* For devices within 400px or less */
+    .slideshow-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 300px) { /* For devices within 300px or less */
+    body {
+        min-width: 300px;
+    }
+    #floatright {
+        display: none;
+    }
+}
