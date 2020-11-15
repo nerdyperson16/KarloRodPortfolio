@@ -320,6 +320,26 @@ p#customimgtext {
     font-family: 'Cabin Sketch', cursive;
 }
 
+/* Custom T-Shirt Section */
+#customshirt {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    vertical-align: middle;
+    display: table-cell; 
+}
+#customshirt img {
+    width: 25%;
+}
+#customshirt h1 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+#customshirt p {
+    font-family: 'Cabin Sketch', cursive;
+}
+
 /* Tracking Section */
 #track {
     text-align: center;
@@ -484,10 +504,16 @@ footer a:visited {
     header {
         min-height: 25%;
     }
+    #customshirt img {
+        width: 40%;
+    }
 }
 @media screen and (max-width: 400px) { /* For devices within 400px or less */
     .slideshow-container {
         display: none;
+    }
+    #customshirt img {
+        width: 50%;
     }
 }
 @media screen and (max-width: 300px) { /* For devices within 300px or less */
