@@ -28,3 +28,9 @@ function on() {
 function off() {
     document.getElementById("kcls").style.display = "none";
 }
+function on6() {
+    document.getElementById("kwhsptsa").style.display = "block";
+}
+function off6() {
+    document.getElementById("kwhsptsa").style.display = "none";
+}
