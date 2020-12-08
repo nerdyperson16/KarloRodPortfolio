@@ -14,3 +14,5 @@ Have a wonderful day!
 
 If you're going out to get some Thai Tea, just ask for Lychee Jelly with it.
 
+
+My code has been made open source for workplaces & schools to review the code for reference purposes. If you're just a new visitor, welcome!
