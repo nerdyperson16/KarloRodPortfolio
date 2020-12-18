@@ -400,6 +400,12 @@ footer {
         font-size: 17px;
     }
 }
+@media screen and (max-width: 635px) {
+    .overlaytext {
+        width: 100%;
+        font-size: 35px;
+    }
+}
 @media screen and (max-width: 600px) {
     #buywhere a {
         padding: 2%;
