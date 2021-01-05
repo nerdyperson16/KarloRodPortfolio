@@ -320,6 +320,38 @@ p#customimgtext {
     font-family: 'Cabin Sketch', cursive;
 }
 
+/* Perler Beads - Game Console */
+#gameconsole {
+    height: 100vh;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    display: table-cell;
+}
+#gameconsole img {
+    width: 25%;
+    float: left;
+    margin-left: 10%;
+}
+#gameconsole ul {
+    list-style-position: inside;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+#gameconsole_right {
+    color: white;
+    margin-top: 10%;
+}
+#gameconsole_right h2 {
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+#gameconsole_right p {
+    font-family: 'Cabin Sketch', cursive;
+}
+#gameconsole_price {
+    font-size: 25px;
+}
+
 /* Custom T-Shirt Section */
 #customshirt {
     text-align: center;
@@ -464,6 +496,40 @@ footer a:visited {
 }
 
 /* For Mobile Devices & Tablets */
+
+@media screen and (max-width: 1031px) { /* For devices within 1240px or less */
+    #gameconsole {
+        height: 100vh;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    #gameconsole img {
+        width: 30%;
+        float: none;
+        margin-left: 0;
+    }
+    #gameconsole ul {
+        list-style-position: inside;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+    #gameconsole_right {
+        color: white;
+        margin-top: 0;
+    }
+    #gameconsole_right h2 {
+        font-family: 'Annie Use Your Telescope', cursive;
+    }
+    #gameconsole_right p {
+        font-family: 'Cabin Sketch', cursive;
+    }
+    #gameconsole_price {
+        font-size: 25px;
+    }
+}
+
 @media screen and (max-width: 970px) { /* For devices within 970px or less */
     .topnav a:not(:last-child) {
         display: none;
