@@ -1,24 +1,30 @@
-<!--PapaTebs Company-->
-<!--Made with love & Thai Tea-->
-<!--How's your day? Is it going well?-->
+<!--
+    Karlo Rodriguez Online Portfolio
+    Hypertext Markup Language 5
+    Created using Microsoft Visual Studio Code with 4-spaced organization
+    index.html
+    Created August 12, 2020 at 10:23 PM (PST)
+-->
+
 <!DOCTYPE html>
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Integration of Cloudflare stylesheet for responsive menu-->
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bellefair&family=Cabin+Sketch&family=Comic+Neue&family=Coming+Soon&family=Gloria+Hallelujah&family=Gochi+Hand&family=Grandstander&family=Handlee&family=IBM+Plex+Sans+Condensed&family=Itim&family=Nanum+Brush+Script&family=Rubik&family=Schoolbell&family=Syne+Mono&family=Zeyada&display=swap" rel="stylesheet">
-        <link rel="icon" href="images/Banana.png">
-        <title>PapaTebs Official Online Website</title>
-    </head>
-    <body>
-        <button onclick="topFunction()" id="skipNav" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
-        <script type="text/javascript">
-            var ua = window.navigator.userAgent;
-            var isIE = /MSIE|Trident/.test(ua);
-            if ( isIE ) {
-                document.write("You're currently using Internet Explorer which is an outdated browser currently. Some features may not be usable. Please check out Google Chrome, Mozilla Firefox, Microsoft Edge, etc. for newer browsers.")
-            }
-            function navigationResponsiveDesign() {
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Implementation of Responsive Design in HTML for modern browsers-->
+    <link rel="stylesheet" href="styles.css"> <!--Linked stylesheet for webpage-->
+    <link rel="icon" href="images/Mango.png"> <!--Linked icon tab for webpage-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Integration of Cloudflare stylesheet for responsive menu-->
+    <link rel="icon" href="images/Banana.png"> <!--Tab logo for webpage-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Asap+Condensed&family=Comic+Neue&family=Coming+Soon&family=Dosis&family=Gentium+Book+Basic&family=IBM+Plex+Serif&family=Indie+Flower&family=Martel&family=Patrick+Hand&family=Rubik&family=Varta&display=swap" rel="stylesheet"> <!--Integrated Google Fonts Stylesheet-->
+    <title>Karlo Rodriguez</title> <!--Tab title for webpage-->
+</head>
+<body>
+    <button onclick="topFunction()" id="skipNav" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+    <script type="text/javascript"> /*Integrated JavaScript for Internet Explorer users*/
+        var ua = window.navigator.userAgent;
+        var isIE = /MSIE|Trident/.test(ua);
+        if ( isIE ) {
+            document.write("You're currently using Internet Explorer which is an outdated browser currently. Some features may not be usable and will not be considered for repairs. Thank you and sorry for the inconvenience. Please check out Google Chrome, Mozilla Firefox, Microsoft Edge, etc. for newer browsers.")
+        }
+        function navigationResponsiveDesign() {
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
                 x.className += " responsive";
@@ -26,836 +32,212 @@
                 x.className = "topnav";
             }
         }
-        </script>
-        <p class="skipnavigation"><a href="#">Skip Navigation</a></p>
-        <header id="home">
-            <div class="header" id="myHeader">
-            <div class="topnav" id="myTopnav">
-                <img id="logo" src="images/PapaTebsLogo.png" alt="PapaTebs Official Logo">
-                <div id="floatright">
-                    <a href="#home">Home</a>
-                    <a href="#maskgroup">Masks</a>
-                    <a href="#perlerbead">Perler Bead Designs</a>
-                    <a href="#gameconsole">PapaTebs Handheld Game Console</a>
-                    <a href="#customshirt">Custom T-Shirts</a>
-                    <a href="#track">Tracking</a>
-                    <a href="#purchasing">Purchasing Options</a>
-                    <a href="javascript:void(0);" class="icon" onclick="navigationResponsiveDesign()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-            </div> 
-            <hr>
-            </div>  
-        </header>
-        <div class="header_sale">
-            <a href="#quote">PURCHASE 10 MASKS AND DELIVERY IS FREE! *SOME EXCLUSIONS MAY APPLY</a>
+    </script>
+    <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/karlo-steven-rodriguez-97aa15199/" class="linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="files/Karlo's_Online_Resume.pdf" download class="resume" title="Resume"><i class="fa fa-file" aria-hidden="true"></i></a>
+        <a href="https://www.catchafire.org/profiles/714602/" download class="volunteering" title="Catchafire"><i class="fa fa-users" aria-hidden="true"></i></a>
+        <a href="https://my.indeed.com/p/karlor-by7uroq" download class="indeed" title="Indeed"><i class="fa fa-info" aria-hidden="true"></i></a>
+        <a href="https://github.com/nerdyperson16" download class="github" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <div id="background_color">
+    <p class="skipnavigation"><a href="#">Skip Navigation</a></p>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <h3>Karlo Rodriguez</h3>
+            <div id="floatright">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#coursework">Coursework</a>
+                <a href="#references">References</a>
+                <a href="#references_sites">Site References</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="navigationResponsiveDesign()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>   
+    </header>
+    <div id="transparent_image">
+        <img src="images/Karlo_Rodriguez_Transparent.png" alt="Karlo Rodriguez">
+        <div id="image_text">
+            <p>My name is Karlo Rodriguez</p>
+            <h1>I'm 17 years old and an 11th grade high school student</h1>
+            <p>I'm an ecstatic web developer, thrilled KCLS public library volunteer, and professional person in a work environment</p>
+            <form action="#contact">
+                <button>Contact me today</button>
+            </form>
         </div>
-        <div class="fullsize">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="images/slideshow/slide1.png" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/slideshow/slide2.png" style="width:100%">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/slideshow/slide3.png" style="width:100%">
-            </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
+    </div>
+    </div>
+    <div id="aboutmesection" class="div_spacing">
+        <h3 id="about">About Me</h3>
+        <p>My name is Karlo Rodriguez. I am a current 11th grade high school student attending Kentwood High School. I have 2 certifications as a Microsoft Technical Associate for HTML and CSS and am a Microsoft Office Specialist for Office Excel 2016. I volunteered in programs here in Washington state such as the King County Library System, Northwest Harvest Food Bank, Kentwood Key Club Division 32, Kentwood Parent Teacher Student Association, and Bag It (Cancer Support). I am a motivated and hard-working student providing technology knowledge and friendly customer/client relations. I provide excellent communication and relationship-building skills while bring strong administrative skills to a work environment.</p>
+    </div>
+    <hr>
+    <div id="experiencesection" class="div_spacing">
+        <div id="button_center">
+        <h3 id="experience">Experience</h3>
+        <div class="experiencebutton">
+            <button onclick="on()">King County Library System</button>
         </div>
-        <div id="layout">
-            <p>It all started when Papa needed a mask. Ever since Papa goes to work, we see hundreds of disposable masks go to waste and to landfill. COVID-19 has started an epidemic that caused masks to be thrown in landfills and garbage cans and seeing hundreds of these masks go to waste will simply cause another issue at hand.</p>
-            <p>That's why we're making masks! Ever since we released our reusable prototype, we've been making masks like crazy! We've created over 50 masks every week and what's better is that it's reusable! Simply put it in the washer after use and instead of throwing it away... Put it in your bag for another use for another day.</p>
-            <p>Here at PapaTebs, the legacy of our company changed. We started to sell masks but we changed to add more items to our company. We now proudly sell masks, custom t-shirt's, and PERLER bead creations. Whatever you decide to look for though, our variety of options are available for you. Thanks for choosing PapaTebs.</p>
+        <div id="kcls" class="overlay" onclick="off()">
+            <div class="overlaytext">I am currently an official Regular Volunteer at KCLS for about 3 years. I aided towards monitoring and helping children with current <a class="easteregg" href="https://youtu.be/n-P_5BZn7qU">programs</a> & events within the library. I also assisted librarians on programs and provided strong communication skills.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on2()">Kentwood High School Division 32 Key Club</button>
+        </div>
+        <div id="kwkc" class="overlay" onclick="off2()">
+            <div class="overlaytext">I assisted towards helping the community thru voluntary community service<a class="easteregg" href="https://youtu.be/NAU7UMqmFXE">.</a> I maintained excellent status of 3.75 hours each quarter by participating in service events. I Currently participated in Key Club for 2 years.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on3()">Northwood Middle School Library Helpers Program</button>
+        </div>  
+        <div id="nlh" class="overlay" onclick="off3()">
+            <div class="overlaytext">I provided support towards helping the school library with organization thru the Dewey Decimal System<a class="easteregg" href="https://youtu.be/QH2-TGUlwu4">.</a> I Assisted librarians on programs, events, and student assistance on checking out and checking in books or returning or receiving books from students. I assisted Northwood Middle School’s library for 2 years in a row in good standing.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on4()">Northwest Harvest Food Bank</button>
+        </div>
+        <div id="nhf" class="overlay" onclick="off4()">
+            <div class="overlaytext">I assisted in packaging food to distribute to the public. I was able to finish packaging food in <a class="easteregg" href="https://youtu.be/KK8FHdFluOQ">a</a> timely manner and understand the policies required on each item for quality standards.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on5()">Bag It (Cancer Support)</button>
+        </div>
+        <div id="bics" class="overlay" onclick="off5()">
+            <div class="overlaytext">I assisted a non-profit organization on flexible web development on their website. I'm currently on-call and ready to modify the website for any updates necessary. I've helped update the website thru a CMS-based system called WordPress. <a class="overlaylink" href="https://bagitcancer.org/">You can visit the website here.</a></div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on6()">Kentwood High School Parent Teacher Student Association</button>
+        </div>
+        <div id="kwhsptsa" class="overlay" onclick="off6()">
+            <div class="overlaytext">I created and designed a website for the Kentwood High School Parent Teacher Student Association. I voluntarily designed a website for the PTSA and attended monthly meetings to ensure quality standards and website updates. I am on-call for the non-profit organization and used a CMS-based web development service called Weebly for site hosting and development.</div>
         </div>
         </div>
-        <div id="maskgroup">
-            <h1 id="masks">Masks</h1>
-            <p class="description">Look! Deep down inside, masks are your favorite. No need to deny it. We get it. Even though we're all being enforced by law to wear masks, we all love masks. So why not be stylish with your mask on the way. Collect the masks you've always wanted from us, PapaTebs. Or don't... I don't know.</p>
-            <h3 class="topic">Masks</h3>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Avacado_Fabric.jpg" alt="100% Cotton Avocado Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Avocado Fabric</h1> 
-                    <p class="browse_status_out">Out of Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Donut_Fabric.jpg" alt="100% Cotton Donut Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Donut Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Hamburger_Pizza_Fries_Fabric.jpg" alt="100% Cotton Novelty Food Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Novelty Food Fabric</h1>
-                    <p class="browse_status">In Stock</p>
-                    <p class="price">$5.00</p>
-                </div>
+    </div>
+    <hr>
+    <div id="courseworksection" class="div_spacing">
+        <h3 id="coursework">Related Educational Coursework</h3>
+        <p><span class="underline_bold">Accounting 1</span> – Developed the use of recording accounts & analyzing costs to proper journals. Follows the Generally Accepted Accounting Principle that ensures that accounting procedures are followed in events being created from transactions<a class="easteregg" href="https://youtu.be/TdGtrvCaras">.</a> Certified Specialist in Microsoft Office Excel.</p>
+        <br />
+        <p><span class="underline_bold">Computer Application</span> – Proficient on Microsoft Office Word, Excel, PowerPoint, and Publisher<a class="easteregg" href="https://youtu.be/_TZyoszF0V4">.</a> Created documents with proper citations from respectable sources and able to publish or format other business documents. Refined keyboarding skills on computers for accuracy.</p>
+        <br />
+        <p><span class="underline_bold">Web Design 1-2</span> - Knowledgeable in Adobe Dreamweaver and Microsoft Visual Studio Code<a class="easteregg" href="http://hooli.xyz/">.</a> I understand the use of HTML5 and CSS and can properly design and create a website for any needs necessary in a timely manner.</p>
+        <br />
+        <p><span class="underline_bold">Honors English</span> - I understand the use of grammar and note taking in a professional environment. Understanding correct punctuation and correct wording to write with for any need necessary. I have <a class="easteregg" href="https://youtu.be/EErSKhC0CZs">passed</a> the class and currently have passed 2 years in a row in high school.</p>
+    </div>
+    <hr>
+    <div id="referencesection" class="div_spacing">
+        <h3 id="references">References</h3>
+        <p id="covid_alert">Due to COVID-19, I have voluntarily removed my references for 2020-2021 to help provide privacy.</p>
+    </div>
+    <hr>
+    <div id="referencesitessection" class="div_spacing">
+        <h3 id="references_sites">Site References</h3>
+        <p>These websites are examples I've created during my free time to show the kind of sites I've helped create. <strong>These aren't real companies and I was not contracted to create such websites available but only as examples for myself.</strong></p>
+        <div id="card_center">
+            <div class="card">
+                <img src="images/PapaTebs_Site_NEW.PNG" alt="PapaTebs Mask Company" style="width:100%">
+                <div class="card_text">
+                    <h4><b>PapaTebs Mask Company</b></h4> 
+                    <p>Online store website</p>
+                    <form action="https://www.karlostevenr.page/PapaTebs/index.html">
+                        <button>Visit website</button>
+                    </form>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/ASL_Fabric.jpg" alt="100% Cotton American Sign Language Finger Spelling Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">American Sign Language Finger Spelling Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
+            <!--<div class="card">
+                <img src="images/PapaTebs_Site.PNG" alt="PapaTebs Mask Company" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Old PapaTebs Mask Company</b></h4> 
+                    <p>Online store website</p>
+                    <form action="https://www.karlostevenr.page/PapaTebs(LEGACY)/index.html">
+                        <button>Visit website</button>
+                    </form>
                 </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Spongebob_Krabby_Patty_Fabric.jpg" alt="100% Cotton Spongebob Krabby Patty Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Spongebob Krabby Patty Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
+            </div>-->
+            <div class="card">
+                <img src="images/CommuniPost_Site.PNG" alt="CommuniPost Online Blog" style="width:100%">
+                <div class="card_text">
+                    <h4><b>CommuniPost Postal Blog</b></h4> 
+                    <p>Online blog website</p>
+                    <form action="https://www.karlostevenr.page/CommuniPost/index.html">
+                        <button>Visit website</button>
+                    </form>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Minecraft_Fabric.jpg" alt="100% Cotton Minecraft Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Minecraft Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
+            <div class="card">
+                <img src="images/TwinBakes_Site.PNG" alt="Twin Bakes Bakery Shop" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Twin Bakes Bakery Shop</b></h4> 
+                    <p>Online store website</p>
+                    <form action="https://www.TwinBakes.page">
+                        <button>Visit website</button>
+                    </form>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Chicken_Fabric.jpg" alt="100% Cotton Chicken Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Chicken Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
+            <div class="card">
+                <img src="images/SinglePlanner_App.PNG" alt="SinglePlanner App" style="width:100%">
+                <div class="card_text">
+                    <h4><b>SinglePlanner</b></h4> 
+                    <p>Online app-based planner</p>
+                    <form action="https://studio.code.org/projects/applab/zwiPDbS5jEjfngAXz3WR7y5sKvYV_AGg7dGRCGCYr5U">
+                        <button>Visit app</button>
+                    </form>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Kitchen_Fabric.jpg" alt="100% Cotton Kitchen Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name"><a class="REEEEEEE2" href="https://www.youtube.com/watch?v=tOgIHOtSZGo">Kitchen</a> Fabric</h1> 
-                    <p class="browse_status_limited">Limited Quantity</p> 
-                    <p class="price">$5.00</p>
-                </div>
+            <div class="card">
+                <img src="images/KWPTSA.PNG" alt="Kentwood PTSA" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Kentwood Parent Teacher Student Association</b></h4> 
+                    <p>Non-profit organization website</p>
+                    <form action="https://kwptsa.weebly.com/">
+                        <button>Visit website</button>
+                    </form>
                 </div>
             </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Krusty_Krab_Fabric.jpg" alt="100% Cotton Krabby Patty Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Krabby Patty Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
+            <!--<div class="card">
+                <img src="images/PortfolioLegacy_Site.PNG" alt="My Portfolio Legacy Site" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Old Portfolio Website</b></h4> 
+                    <p>Legacy portfolio website</p>
+                    <form action="https://www.karlostevenr.page/legacy">
+                        <button>Visit website</button>
+                    </form>
                 </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Sewing_Fabric.jpg" alt="100% Cotton Sewing Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Sewing Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Beige_Fabric.jpg" alt="100% Cotton Beige Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Beige Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                    <br />
-                    <p class="price">* Eligible for custom masks</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Black_Fabric.jpg" alt="100% Cotton Black Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Black Fabric</h1> 
-                    <p class="browse_status_limited">Limited Quantity</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Stars_Fabric.jpg" alt="100% Cotton Stars Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Stars Fabric</h1> 
-                    <p class="browse_status_out">Out of Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/White_Fabric.jpg" alt="100% Cotton White Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">White Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                    <br />
-                    <p class="price">* Eligible for custom masks</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/What's_Shakin'_Bacon_Fabric.jpg" alt="100% Cotton What's Shakin' Bacon Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">What's Shakin' Bacon Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Chicken_2_Fabric.jpg" alt="100% Cotton Variety Chicken Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Variety Chicken Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Seahawks_Fabric.jpg" alt="100% Cotton Seahawks Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Seahawks Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Foxes_Fabric.jpg" alt="100% Cotton Foxes Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Foxes Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Strawberry_Fabric.jpg" alt="100% Cotton Strawberry Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Strawberry Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Hipster_Bunnies_Fabric.jpg" alt="100% Cotton Hipster Bunnies Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Hipster Bunnies Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Peppa_Pig_Fabric.jpg" alt="100% Cotton Peppa Pig Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Peppa Pig Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Dogs_Fabric.jpg" alt="100% Cotton Dogs Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Dogs Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Bunnies_Fabric.jpg" alt="100% Cotton Bunnies Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Bunnies Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Plaid_Fabric.jpg" alt="100% Cotton Plaid Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Plaid Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Minnie_Mouse_Fabric.jpg" alt="100% Cotton Minnie Mouse Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Minnie Mouse Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Kitty_Cat_Fabric.jpg" alt="100% Cotton Kitty Cat Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Kitty Cat Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Miniature_Dogs_Fabric.jpg" alt="100% Cotton Miniature Dogs Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Miniature Dogs Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Peppa_Pig_Cupcake_Fabric.jpg" alt="100% Cotton Peppa Pig Cupcake Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Peppa Pig Cupcake Fabric</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/The_Office_Fabric.jpg" alt="100% Cotton The Office Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">The Office Fabric</h1> 
-                    <p class="browse_status_limited">Limited Quantity</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Star_Wars_Fabric.jpg" alt="100% Cotton Star Wars Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Star Wars Fabric</h1> 
-                    <p class="browse_status_limited">Limited Quantity</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Snoopy_Fabric.jpg" alt="100% Cotton Snoopy Fabric" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Snoopy Fabric</h1> 
-                    <p class="browse_status_limited">Limited Quantity</p> 
-                    <p class="price">$5.00</p>
-                </div>
-                </div>
-            </div>
-            <h3 class="topic">Mask Accessories</h3>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Fabric_Strap.jpg" alt="Fabric Strap" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Fabric Strap</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">Comes free with a purchase of a mask</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Adjustable_Fabric_Strap.jpg" alt="Adjustable Strap" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Adjustable Strap</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$1.00 extra with a purchase of a mask</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/masks/Mask_Clip.JPG" alt="Mask Clip" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">PapaTebs Mask Clip</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$1.00 extra with a purchase of a mask</p>
-                </div>
-                </div>
-            </div>
-            <h3 class="topic">Custom Images</h3>
-            <p id="customimgtext">We are now supplying masks where you can have custom images attached with the mask. For only an extra $3.00 with your mask, you can have your mask (please look for eligible masks) include a custom modified image with your regular mask. It can be your family members, cartoon characters, or even just names! What's even better is that it's laundry-safe! So... Try it out today!</p>
+            </div>-->
         </div>
-        <div id="perlerbead">
-            <h1>Perler Beads</h1>
-            <p class="description">Maybe you want to show off your own custom designs. Or you want to show off that you have cup holders. Whatever the reason is on why you want these cup holders, why not get a PapaTebs cupholder. With our sleek design and enjoyment making these, you'll sure want to see more designs or contact us for your design. It's pretty cool that there are so many designs especially since copyright law might be put into place.</p>
-            <p class="rednote">Please note, Perler bead designs can take as long as 3-weeks due to the nature of creating the design. Please be patient as we create your design.</p>
-            <p class="rednote">Some pictures may look different than what you receive in the mail.</p>
-            <h3 class="topic">Perler Cup Holders - Circular</h3>
-            <p class="description">Each design is designed to fit a car cupholder. These designs can also just be used a cupholder mat for your day-to-day use in your household or office.</p>
-            <p class="rednote">We can customize your cupholder from scratch to any design you'd like. Some designs may not be eligible.</p>
-            <h4>Logos</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Google Circular Cupholder.jpg" alt="Google Circular Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Google Logo</h1> 
-                    <p class="browse_status"><a class="REEEEEEE2" href="https://www.youtube.com/watch?v=HluANRwPyNo">In Stock</a></p> 
-                    <p class="price">$6.00</p>
+    </div>
+    <hr>
+    <div id="contactsection" class="div_spacing">
+        <h3 id="contact">Contact</h3>
+        <div class="contact_section">
+            <form action="mailto:karlo_rodriguez@karlostevenr.page" method="post" enctype="text/plain">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="What would you like to say?" style="height:200px"></textarea>
+                <div id="submission_center">
+                    <input type="submit" value="Submit">
                 </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Sony PlayStation Controller Directional Pads - 4 Pack.jpg" alt="Sony PlayStation Controller Directional Pads - 4 Pack" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Limited Edition: Sony PlayStation Controller Directional Pads - 4 Pack</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>Pokemon Series</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Pokemon Pokeball Circular Cupholder.jpg" alt="Pokemon Pokeball Circular Cupholder - Yellow" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Pokemon Pokeball Circular Cupholder - Yellow</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Pokemon Pokeball Circular Cupholder - Ultra Ball.jpg" alt="Pokemon Pokeball Circular Cupholder - Ultra Ball" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Pokemon Pokeball Circular Cupholder - Ultra Ball</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Pokemon Pokeball Circular Cupholder - Master Ball.jpg" alt="Pokemon Pokeball Circular Cupholder - Master Ball" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Pokemon Pokeball Circular Cupholder - Master Ball</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h3 class="topic">Perler Cup Holders - Square</h3>
-            <p class="description">Want something for the house as decorations? Why not get a square cupholder.</p>
-            <p class="rednote">We can customize your cupholder from scratch to any design you'd like. Some designs may not be eligible.</p>
-            <h4>Logos</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Sony PlayStation Square Cupholder.jpg" alt="Sony PlayStation Square Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">PlayStation Square Cupholder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/WhatsApp Square Cupholder.jpg" alt="WhatsApp Square Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">WhatsApp Square Cupholder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>SANRIO characters</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Hello Kitty Square Cupholder.jpg" alt="SANRIO Hello Kitty Square Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name"><a class="REEEEEEE2" href="https://www.youtube.com/watch?v=CTAnJTB9roI">Hello Kitty Square Cupholder</a></h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>Novelty</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Check Mark Square Cupholder.jpg" alt="Check Mark Square Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Check Mark Square Cupholder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h3 class="topic">Perler Crafts</h3>
-            <p class="description">Instead of cup holders, why won't have something to either display or use?</p>
-            <h4>Earphone Holder</h4>
-            <p class="rednote">You can customize your earphone holder covers by using the circular cup holders above or asking us to make you one from scratch</p>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Avacado Earphone Holder.jpg" alt="Avocado Earphone Holder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Avocado Earphone Holder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$10.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/Watermelon Earphone Holder.jpg" alt="Watermelon Earphone Holder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Watermelon Earphone Holder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$10.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>Team cup holders</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/perler/San Francisco Giants Square Cupholder.jpg" alt="San Francisco Giants Square Cupholder" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">San Francisco Giants Cupholder</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$6.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>3D Crafts</h4>
-            <p class="rednote">Due to the nature of creating these projects, this can take up to 2-3 business days for processing.</p>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/3D/Cherry_Blossom_Tree_3D.jpg" alt="Cherry Blossom Tree 3D" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Mom's Choice: Cherry Blossom Tree</h1> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$10.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/3D/Bonsai_Tree_3D.jpg" alt="Bonsai Tree 3D" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Papa's Choice: Bonsai Tree</h1>
-                    <p class="rednote">*Pot not included</p> 
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$10.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>Key Chains</h4>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Hello_Kitty_Keychain.jpg" alt="Hello Kitty Key Chain" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Hello Kitty Key Chain</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Roblox_Keychain.jpg" alt="Roblox Yellow Newbie Key Chain" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Roblox Yellow Newbie Key Chain</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Offline_Dinosaur_Keychain.jpg" alt="Google Offline-Dinosaur Key Chain" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Google Offline-Dinosaur Key Chain</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Twitch_Keychain.jpg" alt="Twitch Key Chain" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Twitch Key Chain</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <h4>The Aaron Collection</h4>
-            <p style="font-family: 'Cabin Sketch', cursive;">To be honest, PapaTebs and our employees don't really understand shoes. We thought that shoes are shoes. But apparently, they're a fashion style. That's when we were introduced from a friend named Aaron. If Aaron wasn't here for us, we would be wearing Crocs and sandals all day. But now we're in style. To show our thanks to Aaron, we're making a whole collection for him. To be honest though, we have no idea what shoes these are.</p>
-            <p class="rednote">The colors of these shoes can be changed. Let us know so we can change the colors.</p>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Nike_Shoe_Keychain_B.jpg" alt="Nike Shoe Key Chain - Black" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Nike Shoe Key Chain - Black</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/menu/keychain/Nike_Shoe_Keychain_P.jpg" alt="Nike Shoe Key Chain - Pink" style="width:300px;height:300px;">
-                    </div>
-                <div class="flip-card-back">
-                    <h1 class="browse_name">Nike Shoe Key Chain - Pink</h1>
-                    <p class="browse_status">In Stock</p> 
-                    <p class="price">$12.00</p>
-                </div>
-                </div>
-            </div>
-            <div id="gameconsole">
-                <img src="images/menu/gameconsole/1.png" alt="Perler Beads Game Console">
-                <div id="gameconsole_right">
-                    <h2>Introducing the PapaTebs Handheld Game Console</h2>
-                    <p>The magnificent, superlative, and exquisite design</p>
-                    <p>Designed after hours and hours, we are proud to introduce the PapaTebs Game Console.</p>
-                    <p>See the features that are included with the game console.</p>
-                    <ul>
-                        <li>Battery life lasting unlimited hours</li>
-                        <li>1 free game cartridge</li>
-                        <li>100,000 GB fake Storage</li>
-                        <li>900 GB of fake RAM</li>
-                        <li>Headphone Jack included</li>
-                    </ul>
-                    <p id="gameconsole_price">$30.00</p>
-                </div>
-            </div>
-            <h3 class="topic">Special Request Perler Crafts</h3>
-            <div id="specialrequestperler">
-                <p>Want a different design on a larger board? Or maybe you want a cupholder a certain size? Or you just want a different design?</p>
-                <p>Well let's help you out. Here at PapaTebs, customization is what we can do! So, why not special request a design or size?</p>
-                <p>Due to the nature of pixel art & designs, some designs may not be eligible for special request or may be eligible but only depending on the size or design.</p>
-                <p>Let us know by contacting a PapaTebs Agent</p>
-            </div>
+            </form>
         </div>
-        <hr>
-        <div id="customshirt">
-            <h1>Custom T-Shirt Designs</h1>
-            <p class="description">You've always had a picture you wanted to show off. You decide to download it on your phone and show it off to your friends. But wait! Your phone runs out of battery. You didn't bother to print the picture since you don't believe in the printer world (or you just don't have a printer). But, you find out instantly that you're wearing a custom t-shirt design by PapaTebs. Now, you probably don't apply to the reason above but everyone's got their reason. So we'll stop asking questions and make you the t-shirt of your dreams.</p>
-            <p>To order your own custom t-shirt, please contact your PapaTebs agent</p>
-            <img src="images/menu/customshirt/example.jpg" alt="Custom T-Shirt">
-        </div>
-        <hr>
-        <div id="track">
-            <h1>Tracking your order</h1>
-            <p>Look, we get it. You want to see if your order is moving in transit. That's why we've created a utility to let you track your order.</p>
-            <p>It's pretty simple, actually. Simply contact your PapaTebs agent for a tracking number.</p>
-            <p>You'll be able to use the tracking number to see if it's currently waiting for a tailor or currently in process of being made. You can even see the tracking number for parcel delivery and track it during transit.</p>
-            <!--<a id="trackbutton" href="https://studio.code.org/projects/applab/wDakcSMC91QNB1L27xUT9bukYg9LbuVs-H1VjM2Yh5g">Track your order here</a>-->
-            <!--<iframe width="100%" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/AhIH6ZrWzjfJtjVENuxMzq4HdkzVq40g-ej0UrEdiTk/embed?nosource"></iframe>-->
-            <p class="rednote">Due to our current app development hosting platform, we have decided to close that app down until further notice.</p>
-            <p class="rednote"><strong>When making your order, you can contact us for updates on your order or a parcel tracking number.</strong></p>
-        </div>
-        <hr>
-        <div id="purchasing">
-            <div id="purchasing_content">
-            <h1>Purchasing Options</h1>
-            <p>So you've found the item you're looking for but you don't know how to purchase your item. Let's get started with how to purchase your product.</p>
-            <hr>
-            <ol>
-                <li>Contact your PapaTebs agent that has provided you with the website to what you would like to order.</li>
-                <li>We will provide you with purchasing options. Purchasing options that we support is PayPal or Venmo.</li>
-                <li>If you'd like, you can request for a tracking number for free to see what your parcel tracking number or where your item is right now.</li>
-            </ol>
-            <hr>
-            <h3>BETA: The official PapaTebs order form</h3>
-            <p id="shortenbeta">Is that what I think it is? It's an order form! Well, sort of. It's a pre-order form for purchases. You can fill it out instead of telling our PapaTebs agent and we'll take care of it from here. Just let us know after you order and we'll let you know with payment options. This beta program may end as we are trying this service out.</p>
-            <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScz8pPZWKDfeKjK33W_lbGr9wvqVDMhArR6_ZzRBNRQIgiBWg/viewform?embedded=true" width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>-->
-            <a id="preorderbutton" href="https://docs.google.com/forms/d/e/1FAIpQLScz8pPZWKDfeKjK33W_lbGr9wvqVDMhArR6_ZzRBNRQIgiBWg/viewform">Pre-order your items here</a>
-            </div>
-        </div>
-        <hr>
-        <footer>
-            <p id="quote">"I'm but a simple man" -Papa Rodriguez</p>
-            <p>* Purchase "10 Masks & Delivery Is Free" promotion. Delivery is free anywhere in the United States of America except Alaska. International countries such as Canada, Philippines, and Japan are excluded from this program. Deliveries, surcharges, and customs fees are applicable and may be charged upon request. Delivery will not be made or given to the postal service until payment has been approved. Deliveries will be made by the United States Postal Service and dependent on the carrier on using other services<a class="REEEEEEE" href="https://www.youtube.com/watch?v=E94f_b92wl4">.</a> Terms are non-negotiable. You must have blood type A, B, AB, and O to be eligible for the program. Delivery methods can include "Priority Mail" or "First Class Package Service". <strong>Due to COVID-19, delivery to international countries except USA and Canada have made it hard for us to send masks. All deliveries to international countries are no longer available until January 1st, 2021. Terms may change so please be sure to check these terms of delivery for more information.</strong></p>
-            <p>* Refunds & Exchanges - Effective June 21, 2020 until further notice. All refunds and exchanges will not be accepted during this time. We guarantee that all masks have been approved by our quality control team. Terms are non-negotiable. No end date has been provided for refunds and exchanges. Purchases made within this time frame will not be eligible for refunds and exchanges. Purchases are final sale only.</p>
-            <p>* Custom Images Program - Effective July 7, 2020 until further notice. Custom images will include 1 front side image for the price listed above in color designated by the image. Please check with our selection on eligibility of masks by hovering over each image and looking for the text "* Eligible for Custom Images". Terms are non-negotiable.</p>
-            <p>* Discounts - All discounts shall be provided only by the PapaTebs Mask Company and its affiliates on purchases. There are currently no discounts such as "Family Discounts". Discounts can be asked for but must have full permission by the PapaTebs Mask Company customer services and relations department. Please check with your local agent regarding these discounts and how this may affect you. Please remember that any samples provided cannot be refunded and shall not provide replacements in any case necessary. You know who you are.</p>
-            <p>* PapaTebs Handheld Game Console - Battery life lasting unlimited hours, 1 free game cartridge, 100,000 GB fake Storage, 900 GB of fake RAM, and Headphone Jack included are only jokes relating with the product. This product doesn't work at all in any way. It operates as a prop or decoration craft project. Limit one per customer only. May order for additional customers, if requested. PapaTebs reserves the right to refuse service. Not eligible for refunds or exchanges.</p>
-            <p>Notice any bugs that you want us to know? We'd love to know! It could be that it's not displaying correctly on your phone or there's some grammatical issue, tell us. Email us at <a href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a></p>
-            <p>If you have read the terms of service and reviewed the website, good job. Not a lot of people really read this stuff. I mean, I'm not saying that people shouldn't read this but you know... When was the last time you read the terms of service when getting your phone for the first time. I can see a smile on your face anyways. So before I stop typing, let me just say good job. By the way, there are some easter eggs on this website since you know... Hmm. I keep typing stuff on here and drinking some Thai Tea. So anyways, stay safe out there. Karlo out<a class="REEEEEEE" href="https://www.youtube.com/watch?v=Bo_deCOd1HU">!</a></p>
-        </footer>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 3000);
-            }
-        </script>
-        <script src="javascript/mango.js"></script>
-    </body>
+        <h5 id="offline_email">If you don't have an email application client, you can email myself at <a id="regularemail" href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a></h5>
+    </div>
+    <hr>
+    <div id="discretionfooter" class="div_spacing_footer">
+        <p>This website was created by myself (Karlo Rodriguez) by scratch and used resources such as W3schools.com and StackOverflow to help create this website. This website is also a reference to how I can make a website for use. Quality of the site shouldn't be taken in account for when browsing here.</p>
+        <br />
+        <p>Responsive Design has been implemented on this site.</p>
+        <br />
+        <p>Created on August 16, 2020 at 19:54 PM (PST)</p>
+        <br />
+        <p>If you would like to inquire for a web developer or webmaster, you can visit KarloDesign at <a href="https://nerdyperson16.github.io/KarloDesign/">https://nerdyperson16.github.io/KarloDesign/</a></p>
+    </div>
+    <script src="javascript/overlay.js"></script>
+    <script src="javascript/skipnav.js"></script>
+</body>
 </html>
