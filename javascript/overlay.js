@@ -34,3 +34,9 @@ function on6() {
 function off6() {
     document.getElementById("kwhsptsa").style.display = "none";
 }
+function on7() {
+    document.getElementById("peerguide").style.display = "block";
+}
+function off7() {
+    document.getElementById("peerguide").style.display = "none";
+}
