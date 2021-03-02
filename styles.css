@@ -313,6 +313,17 @@ a.easteregg:active {
     background-color: dodgerblue;
 }
 
+/* Interview */
+#interviewvideo_iframe {
+    text-align: center;
+    height: 100%;
+}
+#interviewvideo p a {
+    text-decoration: none;
+    color: black;
+}
+
+
 /* Contact page */
 input[type=text], select, textarea {
     width: 100%;
@@ -465,15 +476,7 @@ input[type=submit]:hover {
         margin-right: auto;
     }
 }
-@media screen and (max-width: 640px) {
-    .card img {
-        display: none;
-    }
-    .icon-bar {
-        display: none;
-    }
-}
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 800px) {
     #button_center button {
         font-size: 17px;
         padding: 0.8%;
@@ -486,6 +489,23 @@ input[type=submit]:hover {
     }
     .overlaytext {
         font-size: 29px;
+    }
+}
+@media screen and (max-width: 706px) {
+    #interviewvideo_iframe {
+        text-align: none;
+    }
+    #interviewvideo_iframe iframe {
+        width: 80%;
+        height: 600;
+    }
+}
+@media screen and (max-width: 640px) {
+    .card img {
+        display: none;
+    }
+    .icon-bar {
+        display: none;
     }
 }
 @media screen and (max-width: 540px) {
