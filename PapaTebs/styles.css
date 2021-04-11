@@ -372,48 +372,6 @@ p#customimgtext {
     font-family: 'Cabin Sketch', cursive;
 }
 
-/* Tracking Section */
-#track {
-    text-align: center;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    vertical-align: middle;
-    display: table-cell;
-}
-#track h1 {
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-#track p {
-    font-family: 'Schoolbell', cursive;
-}
-#track a {
-    background-color: lightskyblue;
-    text-decoration: none;
-    color: black;
-    font-family: 'Coming Soon', cursive;
-    padding: 0.5%;
-    border-radius: 5px;
-}
-#preorderbutton {
-    background-color: lightskyblue;
-    text-decoration: none;
-    color: black;
-    font-family: 'Coming Soon', cursive;
-    padding: 0.5%;
-    border-radius: 5px;
-}
-#track a:hover {
-    color: pink;
-}
-#track a:visited {
-    color: black;
-}
-#track a:hover {
-    background-color: mediumaquamarine;
-}
-
 /* Purchasing Options */
 #purchasing {
     text-align: center;
