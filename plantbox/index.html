@@ -1,14 +1,22 @@
 <!DOCTYPE html>
     <head>
         <title>Karlo Incorporated - PlantBox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     </head>
     <body>
+        <script src="javascript/InternetExplorerError.js"></script>
+        <button onclick="topFunction()" id="skipNav" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+        <p class="skipnavigation"><a href="#">Skip Navigation</a></p>
         <header>
-            <div class="profnav" id="javaNav">
+            <div class="header" id="myHeader">
                 <nav>
                     <ul class="menu">
-                        <li class="logo"><img src="images/karloincorporatedlogo.png" alt="Karlo Incorporated Logo"></li>
-                        <li class="navcat"><a href="#about">About</a></li>
+                        <li class="logo"><a href="#">Karlo Incorporated</a></li>
+                        <li class="item"><a href="#about">About</a></li>
                         <li class="item has-submenu">
                             <a tabindex="0">Products</a>
                             <ul class="submenu">
@@ -17,7 +25,7 @@
                                 <li class="subitem"><a href="">PlantBox</a></li>
                             </ul>
                         </li>
-                        <li class="navcat"><a href="">Support</a></li>
+                        <li class="item"><a href="">Support</a></li>
                         <li class="toggle">
                             <a href="#"><i class="fas fa-bars"></i></a>
                         </li>
@@ -32,6 +40,7 @@
                     <p>Welcome to PlantBox</p>
                 </div>
             </div>
+            <div id="articles">
             <article id="about">
                 <h2>Welcome to the future of gardening solutions...</h2>
                 <br />
@@ -44,74 +53,44 @@
                 <p>From our group of "totally qualified" scientists, you'll be assured to know the the sun we'll be doing the job for us. Put it in front of the sun and make sure to water it and you'll know that your plant will grow.</p>
                 <p>Get free, unlimited cloud updates using our Karlo Incorporated Cloud (Seriously, it's just a cloud).</p>
             </article>
+            </div>
             <hr>
             <div class="parallax2" id="saucer">
-                <div class="hero-text">
+                <div class="hero-text2">
                     <h1 style="font-size:50px">Introducing PlantBox Saucer</h1>
                     <p>Your solution to holding plant pots</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/products/saucer-red.JPG" alt="PlantBox Saucer - Red" style="width:100%">
-                <h1>PlantBox Saucer - Red</h1>
-                <p class="price">$10.99</p>
-                <p>Go in style with a bright red PlantBox saucer. Go with the flow and enjoy the colorful accent colors.</p>
-                <p><button>Coming Soon</button></p>
-            </div>
-            <div class="card">
-                <img src="images/products/saucer-white.JPG" alt="PlantBox Saucer - White" style="width:100%">
-                <h1>PlantBox Saucer - White</h1>
-                <p class="price">$8.99</p>
-                <p>Go in style with a transparent white PlantBox saucer. Go with the flow and enjoy the transparent colors of your PlantBox.</p>
-                <p><button>Coming Soon</button></p>
-            </div>
-            <hr>
             <div class="parallax3" id="holder">
-                <div class="hero-text">
+                <div class="hero-text3">
                     <h1 style="font-size:50px">Introducing PlantBox Infinity Holder</h1>
                     <p>Your solution to holding your brand new PlantBox</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/products/infinityholder-yellow.JPG" alt="PlantBox Infinity Holder - Yellow" style="width:100%">
-                <h1>PlantBox Infinity Holder - Yellow</h1>
-                <p class="price">$3.99</p>
-                <p>Why not hold your Plantbox with a PlantBox Infinity Holder? Try a yellow-glow color to make it stand out.</p>
-                <p><button>Coming Soon</button></p>
-            </div>
-            <hr>
             <div class="parallax4" id="holder">
-                <div class="hero-text">
+                <div class="hero-text4">
                     <h1 style="font-size:50px">Introducing PlantBox Model: 1XE429C</h1>
                     <p>Compatible with every PlantBox Infinity Holder and PlantBox Saucer.</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="images/products/plantbox.JPG" alt="PlantBox" style="width:100%">
-                <h1>PlantBox 1XE429C</h1>
-                <p class="price">$10.99</p>
-                <p>Holding your plants since 2020. The classic model of holding your plants and flowers.</p>
-                <p><button>Coming Soon</button></p>
-            </div>
-            <hr>
-            <h1>See the endless impossibilities.</h1>
-            <p>See our brand new PlantBox YouTube video and see what you can do with your own PlantBox.</p>
-            <!--Input PlantBox Video-->
-            <hr>
             <div class="parallax5">
-                <div class="hero-text">
+                <div class="hero-text5">
                     <h1 style="font-size:50px">PlantBox Support</h1>
                     <p>How can we help you?</p>
                 </div>
             </div>
+            <div id="support">
             <h2>Welcome to PlantBox Support</h2>
             <p>How can we help you?</p>
             <p>Here at PlantBox, we want to give you innovation that always will give you never ending possibilities. That's why with our "closed" customer support center, we're here to make sure that your needs are met.</p>
             <br />
             <p>Want more with PlantBox? Why not view the CAD file for the entire project. Is it a bad idea for us to add it on the website? Yeah. Is it a bad idea for us to show it to the world? Probably, yeah. Are we just giving it to the public so it can be showcased to the world? Yeah.</p>
-            <br />
-            <p>View our recent press release at KarloIncCon. The only place with imagination and money.</p>
-            <!--Input KarloIncCon Presentation PowerPoint-->
+            <a href="https://cad.onshape.com/documents/04b4f877088bbe33d3b7868f/w/00fcd08f0aef2100118dd8cc/e/d9aec45d3cea930f41762dfe"><button id="buttonproject">View Project Here</p></button></a>
+            <p>Or visit: https://cad.onshape.com/documents/04b4f877088bbe33d3b7868f/w/00fcd08f0aef2100118dd8cc/e/d9aec45d3cea930f41762dfe</p>
+            </div>
         </div>
+        <script src="javascript/NavBar.js"></script>
+        <script src="javascript/skipnav.js"></script>
+        <script src="javascript/sticky.js"></script>
     </body>
 </html>
