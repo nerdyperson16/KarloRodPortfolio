@@ -128,7 +128,7 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
 #Kelcie_Gudetama {
     width: 5%;
 }
-#Aaron_BabyYoda {
+#Kristina_BTS {
     width: 5%;
 }
 #Kathryn_KPopBTS {
@@ -136,6 +136,11 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
 }
 #JC_Sinigang {
     width: 5%;
+}
+
+/* Nathan Warning */
+.nathan_note {
+    color: red
 }
 
 /* Warning Section */
