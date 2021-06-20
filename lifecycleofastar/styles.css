@@ -77,7 +77,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 40%;
+    top: 50%;
+    bottom: 50%;
 }
 .about h1 {
     text-align: center;
@@ -328,7 +329,29 @@ footer p {
     }
 }
 @media screen and (max-width: 912px) {
+    #supergiant_text p {
+        font-size: 14px;
+    }
+    footer {
+        width: 80%;
+    }
+    #skipNav {
+        padding: 12px;
+    }
+}
+@media screen and (max-width: 643px) {
+    #supergiant_text p {
+        font-size: 12px;
+    }
+    footer {
+        width: 80%;
+    }
+    #skipNav {
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 447px) {
     body {
-        min-width: 912px;
+        min-width: 447px;
     }
 }
