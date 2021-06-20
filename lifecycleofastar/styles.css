@@ -1,0 +1,334 @@
+/* Reset Styles */
+html, body, footer {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Back to top - skip navigation */
+#skipNav {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: lightgrey;
+}
+#skipNav:hover {
+    background-color: lightgreen;
+}
+
+/* Skip Navigation */
+p.skipnavigation {
+    float: right;
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+}
+p.skipnavigation a:focus {
+    top: 0.4em;
+    left: auto;
+    right: 0.4em;
+    z-index: 2;
+    float: left;
+}
+
+/* Fonts - Global */
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Front View Transparency */
+.front_view {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/space.gif");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.front_view_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* About */
+.about {
+    height: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40%;
+}
+.about h1 {
+    text-align: center;
+}
+.about p {
+    text-align: center;
+}
+
+/* Navigation Links */
+a {
+    color: white;
+    text-decoration: none;
+}
+.about a {
+    color: black;
+}
+
+/* Protostar */
+#protostar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/protostar.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#protostar_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Main Sequence */
+#mainsequence {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/mainsequence.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#mainsequence_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Supergiant */
+#supergiant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/supergiant.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#supergiant_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Supergiant */
+#supernova {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/supernova.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#supernova_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Neutron Star */
+#neutronstar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/neutronstar.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#neutronstar_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Black Hole */
+#blackhole {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blackhole.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#blackhole_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Red Giant */
+#redgiant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/redgiant.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#redgiant_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Planetary Nebula */
+#planetarynebula {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/planetarynebula.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#planetarynebula_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* White Dwarf */
+#whitedwarf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/whitedwarf.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#whitedwarf_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+/* Black Dwarf */
+#blackdwarf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/blackdwarf.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#blackdwarf_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Footer */
+footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+footer p {
+    text-align: center;
+    margin: 1%;
+}
+
+/* Responsive design mode */
+@media screen and (max-width: 1386px) {
+    .front_view_text {
+        width: 80%;
+    }
+    #supergiant_text {
+        width: 80%;
+    }
+    #protostar_text {
+        width: 80%;
+    }
+    #mainsequence_text {
+        width: 80%;
+    }
+    #supergiant_text {
+        width: 80%;
+    }
+    #supernova_text {
+        width: 80%;
+    }
+    #neutronstar_text {
+        width: 80%;
+    }
+    #blackhole_text {
+        width: 80%;
+    }
+    #redgiant_text {
+        width: 80%;
+    }
+    #planetarynebula_text {
+        width: 80%;
+    }
+    #whitedwarf_text {
+        width: 80%;
+    }
+    #blackdwarf_text {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 912px) {
+    body {
+        min-width: 912px;
+    }
+}
