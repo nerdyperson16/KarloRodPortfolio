@@ -149,7 +149,6 @@ p.skipnavigation a:focus {
 /* Transparent image */
 #transparent_image {
     display: flex;
-    margin: 1%;
 }
 #transparent_image img {
     margin-left: auto;
@@ -279,6 +278,13 @@ a.easteregg:active {
     font-weight: bold;
     color: red;
     font-family: 'Asap Condensed', sans-serif;
+}
+
+/* Certifications */
+#certifications p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* Site references cards */
@@ -515,6 +521,9 @@ input[type=submit]:hover {
     }
     .icon-bar {
         top: 60%;
+    }
+    #certifications p {
+        width: 75%;
     }
 }
 @media screen and (max-width: 400px) {
