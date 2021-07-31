@@ -40,3 +40,9 @@ function on7() {
 function off7() {
     document.getElementById("peerguide").style.display = "none";
 }
+function on8() {
+    document.getElementById("datewise").style.display = "block";
+}
+function off8() {
+    document.getElementById("datewise").style.display = "none";
+}
