@@ -1,71 +1,274 @@
 <!--
-    Twin Bakes Bakery Shop Company
+    Karlo Rodriguez Online Portfolio
     Hypertext Markup Language 5
     Created using Microsoft Visual Studio Code with 4-spaced organization
     index.html
-    Created August 6, 2020 at 12:59 AM (PST)
+    Created August 12, 2020 at 10:23 PM (PST)
 -->
 
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--Implementation of Responsive Design for modern browsers-->
-    <link rel="stylesheet" href="styles.css"> <!--Implementation of stylesheet code-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/TwinBakes_Logo.PNG"> <!--Icon tabs for browsers-->
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Chelsea+Market&family=Chilanka&family=Dancing+Script:wght@700&family=Inconsolata&family=Indie+Flower&family=Kalam&family=Pangolin&family=Yantramanav&display=swap" rel="stylesheet"> <!--Google Fonts integration-->
-    <title>Twin Bakes Dessert Shop</title> <!--Tab title for browsers-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Implementation of Responsive Design in HTML for modern browsers-->
+    <link rel="stylesheet" href="styles.css"> <!--Linked stylesheet for webpage-->
+    <link rel="icon" href="images/Mango.png"> <!--Linked icon tab for webpage-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Integration of Cloudflare stylesheet for responsive menu-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Asap+Condensed&family=Comic+Neue&family=Coming+Soon&family=Dosis&family=Gentium+Book+Basic&family=IBM+Plex+Serif&family=Indie+Flower&family=Martel&family=Patrick+Hand&family=Rubik&family=Varta&display=swap" rel="stylesheet"> <!--Integrated Google Fonts Stylesheet--> 
+    <title>Karlo Rodriguez</title> <!--Tab title for webpage-->
 </head>
 <body>
     <button onclick="topFunction()" id="skipNav" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
-    <video autoplay muted loop id="myVideo">
-        <source src="images/stock_video.mp4" type="video/mp4">
-    </video>
-    <p class="skipnavigation"><a href="index.html">Skip Navigation</a></p>
-    <div class="container_index">
-    <script type="text/javascript">
+    <script type="text/javascript"> /*Integrated JavaScript for Internet Explorer users*/
         var ua = window.navigator.userAgent;
         var isIE = /MSIE|Trident/.test(ua);
         if ( isIE ) {
-            document.write("You're currently using Internet Explorer which is now an outdated browser currently from our organization. Go ahead and get some Thai Tea and look up some new browsers like Google Chrome (coder recommended), Microsoft Edge (ehh...), and Mozilla Firefox (that's ok!).")
+            document.write("You're currently using Internet Explorer which is an outdated browser currently. Some features may not be usable and will not be considered for repairs. Thank you and sorry for the inconvenience. Please check out Google Chrome, Mozilla Firefox, Microsoft Edge, etc. for newer browsers.")
+        }
+        function navigationResponsiveDesign() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
-        <header>
-            <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-                The Twin Bakes Dessert Shop website will no longer be available on August 13, 2021. Please use the official Twin Bakes social media links. We apologize for the inconvenience.
+    <div class="icon-bar">
+        <a href="https://www.linkedin.com/in/karlo-steven-rodriguez-97aa15199/" class="linkedin" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="files/Karlo's_Online_Resume.pdf" download class="resume" title="Resume"><i class="fa fa-file" aria-hidden="true"></i></a>
+        <a href="https://www.catchafire.org/profiles/714602/" download class="volunteering" title="Catchafire"><i class="fa fa-users" aria-hidden="true"></i></a>
+        <a href="https://my.indeed.com/p/karlor-by7uroq" download class="indeed" title="Indeed"><i class="fa fa-info" aria-hidden="true"></i></a>
+        <a href="https://github.com/nerdyperson16" download class="github" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+    </div>
+    <div id="background_color">
+    <p class="skipnavigation"><a href="#">Skip Navigation</a></p>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <h3>Karlo Rodriguez</h3>
+            <div id="floatright">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#coursework">Coursework</a>
+                <a href="#references">References</a>
+                <a href="#references_sites">Site References</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="navigationResponsiveDesign()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
-            <div id="logo_image_center">
-                <a id="logo_nav" href="index.html"><img id="logo_picture" src="images/TwinBakes_Logo.PNG"></a>
+        </div>   
+    </header>
+    <div id="transparent_image">
+        <img src="images/Karlo2021_2.png" alt="Karlo Rodriguez in a mask" title="Karlo Rodriguez in a mask">
+        <div id="image_text">
+            <p>My name is <a class="easteregg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Karlo Rodriguez</a></p>
+            <h1>I'm 17 years old and an 12th grade high school student</h1>
+            <p>I'm an ecstatic web developer, thrilled KCLS public library volunteer, and a professional person in a work environment</p>
+            <form action="#contact">
+                <button>Contact me today</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div id="aboutmesection" class="div_spacing">
+        <h3 id="about">About Me</h3>
+        <p>My name is Karlo Rodriguez. I am a current 12th grade senior high school student attending Kentwood High School. I have 2 certifications as a Microsoft Technical Associate for HTML and CSS and am a Microsoft Office Specialist for Office Excel 2016. I volunteered in programs here in Washington state such as the King County Library System, Northwest Harvest Food Bank, Kentwood Key Club Division 32, Kentwood Parent Teacher Student Association, Bag It (Cancer Support), and the DateWise Peer Education program. I am a motivated and hard-working student providing technology knowledge and friendly customer/client relations. I provide excellent communication and relationship-building skills while bring strong administrative skills to a work environment. I believe it's an important standard to connect with others and use resources that I currently have on hand to meet the standards of clients and organizations.</p>
+    </div>
+    <hr>
+    <div id="experiencesection" class="div_spacing">
+        <div id="button_center">
+        <h3 id="experience">Experience</h3>
+        <div class="experiencebutton">
+            <button onclick="on()">King County Library System</button>
+        </div>
+        <div id="kcls" class="overlay" onclick="off()">
+            <div class="overlaytext">I am currently an official Regular Volunteer at KCLS for about 3 years. I aided towards monitoring and helping children with current <a class="easteregg" href="https://youtu.be/n-P_5BZn7qU">programs</a> & events within the library. I also assisted librarians on programs and provided strong communication skills.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on2()">Kentwood High School Division 32 Key Club</button>
+        </div>
+        <div id="kwkc" class="overlay" onclick="off2()">
+            <div class="overlaytext">I assisted towards helping the community thru voluntary community service<a class="easteregg" href="https://youtu.be/NAU7UMqmFXE">.</a> I maintained excellent status of 3.75 hours each quarter by participating in service events. I Currently participated in Key Club for 2 years.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on3()">Northwood Middle School Library Helpers Program</button>
+        </div>  
+        <div id="nlh" class="overlay" onclick="off3()">
+            <div class="overlaytext">I provided support towards helping the school library with organization thru the Dewey Decimal System<a class="easteregg" href="https://youtu.be/QH2-TGUlwu4">.</a> I Assisted librarians on programs, events, and student assistance on checking out and checking in books or returning or receiving books from students. I assisted Northwood Middle School’s library for 2 years in a row in good standing.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on4()">Northwest Harvest Food Bank</button>
+        </div>
+        <div id="nhf" class="overlay" onclick="off4()">
+            <div class="overlaytext">I assisted in packaging food to distribute to the public. I was able to finish packaging food in <a class="easteregg" href="https://youtu.be/KK8FHdFluOQ">a</a> timely manner and understand the policies required on each item for quality standards.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on5()">Bag It (Cancer Support)</button>
+        </div>
+        <div id="bics" class="overlay" onclick="off5()">
+            <div class="overlaytext">I assisted a non-profit organization on flexible web development on their website. I'm currently on-call and ready to modify the website for any updates necessary. I've helped update the website thru a CMS-based system called WordPress. <a class="overlaylink" href="https://bagitcancer.org/">You can visit the website here.</a></div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on6()">Kentwood High School Parent Teacher Student Association</button>
+        </div>
+        <div id="kwhsptsa" class="overlay" onclick="off6()">
+            <div class="overlaytext">I created and designed a website for the Kentwood High School Parent Teacher Student Association. I voluntarily designed a website for the PTSA and attended monthly meetings to ensure quality standards and website updates. I am on-call for the non-profit organization and used a CMS-based web development service called Weebly for site hosting and development.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on7()">Peer Guide Tutoring Services Washington</button>
+        </div>
+        <div id="peerguide" class="overlay" onclick="off7()">
+            <div class="overlaytext">I provided tutoring services and lessons to an assigned student set by the non-profit organization, <a style="text-decoration: none; color: black;" href="https://www.peerguide.org/home">PeerGuide</a>, and help assist thru Basic JavaScript programming education and answer any questions related to the class. Currently using the Code.org App Lab & Game Lab interface and helping provide programming education to kids and teens. I've volunteered over 36 hours, tutoring each students with JavaScript programming with Code.org App Lab and Game Lab.</div>
+        </div>
+        <div class="experiencebutton">
+            <button onclick="on8()">DateWise Peer Eduction Tutor</button>
+        </div>
+        <div id="datewise" class="overlay" onclick="off8()">
+            <div class="overlaytext">I've helped tutor students, during class, on dating abuse and spreading awareness on what abuse can occur. A peer education tutor comes in every week to receive training on peer education and explain to students dating abuse while answering questions that students may have. I've worked with the DateWise Peer Education program for the Greater Maple Valley Community Center for Maple Valley, WA.</div>
+        </div>
+        </div>
+    </div>
+    <hr>
+    <div id="courseworksection" class="div_spacing">
+        <h3 id="coursework">Related Educational Coursework</h3>
+        <p><span class="underline_bold">Accounting 1</span> – Developed the use of recording accounts & analyzing costs to proper journals. Follows the Generally Accepted Accounting Principle that ensures that accounting procedures are followed in events being created from transactions<a class="easteregg" href="https://youtu.be/TdGtrvCaras">.</a> Certified Specialist in Microsoft Office Excel.</p>
+        <br />
+        <p><span class="underline_bold">Computer Application</span> – Proficient on Microsoft Office Word, Excel, PowerPoint, and Publisher<a class="easteregg" href="https://youtu.be/_TZyoszF0V4">.</a> Created documents with proper citations from respectable sources and able to publish or format other business documents. Refined keyboarding skills on computers for accuracy.</p>
+        <br />
+        <p><span class="underline_bold">Web Design 1-2</span> - Knowledgeable in Adobe Dreamweaver and Microsoft Visual Studio Code<a class="easteregg" href="http://hooli.xyz/">.</a> I understand the use of HTML5 and CSS and can properly design and create a front-end website for any needs necessary in a timely manner.</p>
+        <br />
+        <p><span class="underline_bold">Honors English</span> - I understand the use of grammar and note taking in a professional environment. Understanding correct punctuation and correct wording to write with for any need necessary. I have <a class="easteregg" href="https://youtu.be/EErSKhC0CZs">passed</a> the class and currently have passed 2 years in a row in high school. I've also attended Advanced Placement English Language & Composition for 1 year in high school.</p>
+        <br />
+        <p><span class="underline_bold">3D Modeling & Creative Engineering - Engineering Drawing 1-2</span> - Using various softwares such as OnShape, SOLIDWORKS, and SketchUp including with A+CAD, I can create a 3D object that can be used for 3D printing capabilities and create products that can either help or bring entertainment use. <a class="easteregg" href="https://www.youtube.com/watch?v=4AZB64VBJfA">I've</a> passed the class with a passing grade of A and currently have done 3D Modeling/Engineering for 2 years in a row in high school.</p>
+    </div>
+    <hr>
+    <div id="referencesection" class="div_spacing">
+        <h3 id="references">References</h3>
+        <p id="covid_alert">Due to COVID-19, I have voluntarily removed my references for 2021-2022 to help provide privacy.</p>
+    </div>
+    <hr>
+    <div id="certifications" class="div_spacing">
+        <h3 id="references">Certifications</h3>
+        <p style="font-weight: bold; color: red; font-size: 14px;">Certifications were made thru Certiport</p>
+        <br />
+        <p><strong>Microsoft Technology Associate - Introduction to Programming Using HTML and CSS</strong> [Issued Dec 2019] - Credential ID: wLD4c-H9ad</p>
+        <br />
+        <p><strong>Microsoft Office Specialist - Office Excel 2016</strong> [Issued Jan 2019] - Credential ID wmWcP-4ScY</p>
+    </div>
+    <hr>
+    <div id="referencesitessection" class="div_spacing">
+        <h3 id="references_sites">Site References</h3>
+        <p>These websites and applications are some examples that I've done on my free time that I am capable of doing. <strong>Twin Bakes Bakery Shop and the Kentwood High PTSA are real organizations that I've worked with.</strong></p>
+        <div id="card_center">
+            <div class="card">
+                <img src="images/PapaTebs_Site_NEW.PNG" alt="PapaTebs Mask Company" style="width:100%">
+                <div class="card_text">
+                    <h4><b>PapaTebs Mask Company</b></h4> 
+                    <p>Online store website</p>
+                    <form action="https://www.karlostevenr.page/PapaTebs/index.html">
+                        <button>Visit website</button>
+                    </form>
+                </div>
             </div>
-            <div id="navigation">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="reviews.html">Reviews</a>
-                <a class="responsivenav" href="https://www.facebook.com/TwinBakes-106769384692272/?ref=page_internal">Facebook</a>
-                <a class="responsivenav" href="https://www.instagram.com/twinbakes20/">Instagram</a>
-                <a href="contact.html">Contact</a>
+            <!--<div class="card">
+                <img src="images/PapaTebs_Site.PNG" alt="PapaTebs Mask Company" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Old PapaTebs Mask Company</b></h4> 
+                    <p>Online store website</p>
+                    <form action="https://www.karlostevenr.page/PapaTebs(LEGACY)/index.html">
+                        <button>Visit website</button>
+                    </form>
+                </div>
+            </div>-->
+            <div class="card">
+                <img src="images/TwinBakes_Site.PNG" alt="Twin Bakes Bakery Shop" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Twin Bakes Bakery Shop</b></h4> 
+                    <p>Online store website</p>
+                    <form action="TwinBakes/index.html">
+                        <button>Visit website</button>
+                    </form>
+                </div>
             </div>
-            <hr>
-        </header>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1 style="font-size:50px">Twin Bakes</h1>
-                <p>Sweets for everyone. 🍞🍪🎂🥧</p>
-                <a href="contact.html">Inquire Today</a>
+            <div class="card">
+                <img src="images/SinglePlanner_App.PNG" alt="SinglePlanner App" style="width:100%">
+                <div class="card_text">
+                    <h4><b>SinglePlanner</b></h4> 
+                    <p>Online app-based planner</p>
+                    <form action="https://studio.code.org/projects/applab/zwiPDbS5jEjfngAXz3WR7y5sKvYV_AGg7dGRCGCYr5U">
+                        <button>Visit app</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/KWPTSA.PNG" alt="Kentwood PTSA" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Kentwood PTSA</b></h4> 
+                    <p>Non-profit organization</p>
+                    <form action="https://kwptsa.weebly.com/">
+                        <button>Visit website</button>
+                    </form>
+                </div>
+            </div>
+            <!--<div class="card">
+                <img src="images/PortfolioLegacy_Site.PNG" alt="My Portfolio Legacy Site" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Old Portfolio Website</b></h4> 
+                    <p>Legacy portfolio website</p>
+                    <form action="https://www.karlostevenr.page/legacy">
+                        <button>Visit website</button>
+                    </form>
+                </div>
+            </div>-->
+            <div class="card">
+                <img src="images/Karlo'sPhotography.PNG" alt="Karlo's Photography" style="width:100%">
+                <div class="card_text">
+                    <h4><b>Karlo's Photography</b></h4> 
+                    <p>Photography website</p>
+                    <form action="karlophotography/index.html">
+                        <button>Visit website</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <p class="quote">
-            My name is Kenneth Rivera Bustamante, <br />
-            I enjoyed making food for my boys and tried making some No-Bake Cheesecake. At first, I made a No-Bake Blueberry Cheesecake and I even shared it to my nieces and nephews. Afterwards, I made pastas and more. <br />
-            I even made No-Bake cheesecakes like Mixed Berries, Ferrero Cheesecake, Mango Cheesecake, Oreo Cheesecake with Walnuts, and Oreo Cheesecake with Nutella. <br />
-            Last September 2018 as a banker, I decided to resign and focus on my twin boys. I continued to bake using my only toaster and I tried making other treats like homemade pretzel, Keto Peanut Butter Cookies, Choco-Chip Cookies, Brownies, and a lot more. <br />
-            On October 2018, I bought a convection oven. I tried making homemade Pizza from scratch. <br />
-            One morning, I remember enjoying to eat homemade Banana Bread from my friend. And I started searching for a recipe so I can make it for my own. On December 2018, I made the perfect Banana Bread and shared it a friend and she loved it. I even tried exploring something new for her Banana Bread recipe. Remembering that she had family members who are Diabetic, I researched for an ingredient to make her Banana Bread safe for older people, health conscious, and diabetic. <br />
-            I started making Banana Bread for my family and some friends. Sometimes, I visited my work and shared my Banana Bread and everyone loved it. <br />
-            One day, a family friend of mine asked “how much?”. I refused and said that I don’t sell it since I baked it only for personal and family consumption. But my family friend insisted that I should give her a price so she can buy some. <br />
-            And from all of that started my baking business to what it is today. Welcome to Twin Bakes!
-        </p>
     </div>
+    <hr>
+    <div id="interviewvideo" class="div_spacing">
+        <h3>Video Portfolio</h3>
+        <p>I've created a video called <strong>The Simulation Game No One Knows</strong> which is about myself interviewing various video game developers of a lost video game called <a href="https://en.wikipedia.org/wiki/Toy_Shop">Toy Shop</a> for the Nintendo DS.</p>
+        <br />
+        <div id="interviewvideo_iframe">
+            <iframe width="600" height="400" class="video" src="https://www.youtube.com/embed/visYOTLB71U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <hr>
+    <div id="contactsection" class="div_spacing">
+        <h3 id="contact">Contact</h3>
+        <div class="contact_section">
+            <form action="mailto:karlo_rodriguez@karlostevenr.page" method="post" enctype="text/plain">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="What would you like to say?" style="height:200px"></textarea>
+                <div id="submission_center">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <h5 id="offline_email">If you don't have an email application client, you can email myself at <a id="regularemail" href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a></h5>
+    </div>
+    <hr>
+    <div id="discretionfooter" class="div_spacing_footer">
+        <p>This website was created by myself (Karlo Rodriguez) by scratch and used resources such as W3schools.com and StackOverflow to help create this website. This website is also a reference to how I can make a website for use. Quality of the site shouldn't be taken in account for when browsing here.</p>
+        <br />
+        <p>Responsive Design has been implemented on this site.</p>
+        <br />
+        <p>Created on August 16, 2020 at 19:54 PM (PST)</p>
+        <br />
+        <p>If you would like to inquire for a web developer or webmaster, you can visit KarloDesign at <a href="https://nerdyperson16.github.io/KarloDesign/">https://nerdyperson16.github.io/KarloDesign/</a></p>
+    </div>
+    <script src="javascript/overlay.js"></script>
     <script src="javascript/skipnav.js"></script>
 </body>
 </html>
