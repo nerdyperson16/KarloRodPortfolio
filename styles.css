@@ -286,6 +286,19 @@ a.easteregg:active {
     margin-right: auto;
     width: 80%;
 }
+p.credly {
+    text-align: center;
+}
+a.credly {
+    padding: 0.5%;
+    background-color: #FF7355;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+a.credly:hover {
+    background-color: orangered;
+}
 
 /* Site references cards */
 #card_center {
