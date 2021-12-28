@@ -5,8 +5,6 @@ If you're reading this README.md file, then cool! You were able to locate the in
 
 If you're someone else just looking at this portfolio, feel free to review any code that you would like to use on your website.
 
-PLEASE DO NOT TAKE ANY IMAGES, VIDEOS, NAMES, OR ANY INFORMATION THAT COULD IDENTIFY MYSELF OR ANYONE ELSE'S NAME.
-
 PLEASE ALSO CREDIT MYSELF & ANY CREDIT I GIVE INSIDE MY CODE.
 
 Have a wonderful day!
