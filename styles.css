@@ -422,15 +422,15 @@ input[type=submit]:hover {
         text-align: left;
     }
 }
-@media screen and (max-width: 1540px) {
+/*@media screen and (max-width: 1540px) {
     #image_text {
         text-align: center;
         position: absolute;
         left: 15%;
         top: 20%;
     }
-}
-@media screen and (max-width: 1450px) {
+}*/
+@media screen and (max-width: 1280px) {
     #image_text {
         text-align: center;
         position: absolute;
