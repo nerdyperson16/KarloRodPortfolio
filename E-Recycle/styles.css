@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+
+/* Reset Styles */
+html, body, nav, h3, h4, a {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+p, ol, ul {
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', serif;
+}
+a {
+	font-family: 'Roboto Slab', serif;
+}
+
+/* Global Classes */
+hr.nomargin {
+	margin: 0;
+}
+
+/* Navigation Bar */
+h4 {
+	float: left;
+	padding: 0.35%;
+}
+nav {
+	text-align: right;
+	padding: 0.5%;
+	margin: 0.5%;
+}
+nav a {
+	text-decoration: none;
+	padding: 0.5%;
+	color: black;
+	font-weight: bold;
+}
+nav a:hover {
+	background-color: lightgray;
+	border-radius: 2.5%;
+}
+
+/* Banner Image */
+.banner_img {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/BannerImage.jpg");
+	height: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.banner_text {
+	position: absolute;
+	margin-top: auto;
+	left: 75%;
+	right: 5%;
+	color: white;
+	text-align: right;
+	font-size: 30px;
+	top: 28%;
+}
+
+/* Center Body */
+.centerBody {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+}
+.centerBody_Text {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.centerBody_Text h3 {
+	margin: 1%, 0, 1%, 0;
+}
+.centerBody_Text p {
+	font-size: 17px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Promo Section */
+.promo {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.promo a:hover {
+	background-color: lightgray;
+}
+.promo a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+.promo a:active {
+	color: black;
+}
+
+/* Data Section */
+* {
+	box-sizing: border-box;
+}
+.column {
+	float: left;
+	width: 25%;
+	padding: 0 5px;
+}
+.row {
+	margin: 0 -5px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Quote Section */
+p.quote {
+	text-align: right;
+	margin: 0.5%;
+	font-weight: bold;
+	font-size: 12px;
+}
+p.quote a {
+	text-decoration: none;
+	color: black;
+}
+p.quote a:active {
+	color: black;
+}
+p.quote a:hover {
+	text-decoration: underline;
+}
+
+/* Data */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 16px;
+	text-align: center;
+	background-color: #444;
+	color: white;
+}  
+.fa {
+	font-size:50px;
+}
+
+/* Testimonial Quotes */
+.testimonialquote {
+	background-color: lightgray;
+	border-radius: 5px;
+}
+p.testimonialquote {
+	padding: 2%;
+	font-style: italic;
+	font-size: 18px;
+}
+p.testimonialquote a {
+	text-decoration: none;
+	color: black;
+}
+p.testimonialquote a:hover {
+	text-decoration: underline;
+}
+
+/* Ordered List & Unordered List */
+ol li {
+	font-weight: bold;
+}
+ul li {
+	list-style-type: circle;
+	font-size: 18px;
+}
+
+/* External Links */
+.externallink {
+	text-decoration: none;
+	color: black;
+	margin: 1%;
+}
+.externallink a:hover {
+	text-decoration: underline;
+}
+.externallink a:active {
+	color: black;
+}
+
+/* Responsive Design */
+.hidden {
+	display: none;
+}
+@media screen and (max-width: 1015px) {
+	.resize {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 780px) {
+	.column {
+		width: 100%;
+	  	display: block;
+	  	margin-bottom: 10px;
+	}
+	.banner_img {
+		display: none;
+	}
+}
+@media screen and (max-width: 540px) {
+	.hidden {
+		display: block;
+	}
+	#nav_hide {
+		display: none;
+	}
+	.resize {
+		display: none;
+	}
+}
