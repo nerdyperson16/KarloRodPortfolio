@@ -206,6 +206,12 @@ hr {
     font-family: 'Martel', serif;
 }
 
+/* Education Section */
+#education h4 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+
 /* Experience section */
 #experiencesection button {
     text-align: center;
@@ -396,9 +402,21 @@ input[type=submit]:hover {
     font-size: 13px;
     font-family: 'Gentium Book Basic', serif;
 }
+#discretionfooter a {
+    color: black;
+    text-decoration: none;
+}
+#discretionfooter a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#discretionfooter a:active {
+    color: black;
+}
 
 /* Responsive design mode */
-@media screen and (max-width: 795px) { /* For devices other than a laptop within 795px or less */
+@media screen and (max-width: 856px) { /* For devices other than a laptop within 795px or less */
     .topnav a:not(:last-child) {
         display: none;
     }
