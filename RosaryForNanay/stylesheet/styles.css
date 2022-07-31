@@ -1,10 +1,7 @@
 /*
-    Rosary for Nanay - Stylesheet Webpage
+    Rosary for Nanay
     karlostevenr.page/RosaryforNanay
-    Edited via Microsoft Visual Studio Code
-    4-spaced organization code
-    Date Created: August 1, 2020 at 12:40 AM (PST) "I know, that's late"
-    Made with love and Thai Tea w/ Lychee Jelly
+    Date Created: August 1, 2020 at 12:40 AM (PST)
 */
 
 /* Reset styles */
@@ -33,12 +30,26 @@ p.skipnavigation a:focus {
     z-index: 2;
     float: left;
 }
+#skipNav {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: gray;
+}
+#skipNav:hover {
+    background-color: #444;
+}
 
 /* Header section */
-/*#logo img {
-    height: 65px;
-    float: left;
-}*/
 #logo {
     height: 65px;
     float: left;
@@ -100,6 +111,10 @@ p#howto {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
+h3 {
+    text-align: center;
+    text-decoration: underline;
+}
 
 /* Ordered lists section */
 li {
@@ -120,22 +135,22 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
 
 /* Easter Eggs */
 #Nathan_Dinosaur {
-    width: 5%;
+    width: 15%;
 }
 #Karlo_Laptop {
-    width: 5%;
+    width: 15%;
 }
 #Kelcie_Gudetama {
-    width: 5%;
+    width: 15%;
 }
 #Kristina_BTS {
-    width: 5%;
+    width: 15%;
 }
 #Kathryn_KPopBTS {
-    width: 5%;
+    width: 15%;
 }
 #JC_Sinigang {
-    width: 5%;
+    width: 15%;
 }
 
 /* Nathan Warning */
@@ -169,16 +184,11 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
 }
 
 /* Responsive Design section */
-
-/* For mobile phones: */
 @media screen and (max-width:770px) {
-    /*#logo img {
-        float: none;
-        height: 100px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }*/
+    #skipNav {
+        font-size: 9px;
+        padding: 7.5px;
+    }
     #logo {
         float: none;
         height: 100px;
@@ -215,7 +225,7 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
         display: none;
     }
     #mainsection {
-        width: 90%;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;

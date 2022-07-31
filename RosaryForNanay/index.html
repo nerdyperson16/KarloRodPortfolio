@@ -1,61 +1,29 @@
 <!--
-    Rosary for Nanay - HTML5 Index Webpage
+    Rosary for Nanay
     karlostevenr.page/RosaryforNanay
-    Edited via Microsoft Visual Studio Code
-    4-spaced organization code
     Date Created: August 1, 2020 at 12:33 AM (PST) "I know, that's late"
     Made with love and Thai Tea w/ Lychee Jelly
 -->
 <!DOCTYPE html>
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1"> <!--Implementation of Responsive Design in HTML for modern browsers-->
-    <link rel="stylesheet" href="stylesheet/styles.css"> <!--Implementation of stylesheet code-->
-    <link rel="icon" href="images/Icon.png"> <!--Icon tabs for browsers-->
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Nanum+Gothic&family=Raleway&family=Roboto+Condensed&family=Varta&display=swap" rel="stylesheet"> <!--Google Fonts-->
-    <title>Rosary for Nanay</title> <!--Title tabs for browsers-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="icon" href="images/Icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Nanum+Gothic&family=Raleway&family=Roboto+Condensed&family=Varta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rosary for Nanay</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="skipNav" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
     <p class="skipnavigation"><a href="#logo">Skip Navigation</a></p>
     <div class="container">
-        <script type="text/javascript">
-            var ua = window.navigator.userAgent;
-            var isIE = /MSIE|Trident/.test(ua);
-            if ( isIE ) {
-                document.write("You're currently using Internet Explorer which is now an outdated browser currently from our organization. Go ahead and get some Thai Tea and look up some new browsers like Google Chrome (coder recommended), Microsoft Edge (ehh...), and Mozilla Firefox (that's ok!).")
-            }
-            function ee(sw) {
-                var pic;
-                if (sw == 1) {
-                    pic = "images/Dinosaur.png"
-                    pic2 = "images/Laptop.png"
-                    pic3 = "images/Gudetama.gif"
-                    pic4 = "images/BTSKristina.jpg"
-                    pic5 = "images/BTS.png"
-                    pic6 = "images/Sinigang.png"
-                } else {
-                    pic = ""
-                    pic2 = ""
-                    pic3 = ""
-                    pic4 = ""
-                    pic5 = ""
-                    pic6 = ""
-                }
-                document.getElementById('Nathan_Dinosaur').src = pic;
-                document.getElementById('Karlo_Laptop').src = pic2;
-                document.getElementById('Kelcie_Gudetama').src = pic3;
-                document.getElementById('Kristina_BTS').src = pic4;
-                document.getElementById('Kathryn_KPopBTS').src = pic5;
-                document.getElementById('JC_Sinigang').src = pic6;
-            }
-        </script>
+        <script src="js/ietest.js"></script>
         <header>
         <a id="logo_input" href="#logo">
             <input type="image" id="logo" src="images/Logo.PNG" alt="Logo for Rosary for Nanay" href="index.html" onclick="ee(1)" />
         </a>
-        <!--<a id="logo" href="index.html"><img src="images/Logo.PNG" alt="Logo for Rosary for Nanay"></a>-->
         <div id="navigation">
             <div id="navigation_right">
-                <a id="main" href="index.html">Home</a>
                 <a href="#JC">JC</a>
                 <a href="#Kathryn">Kathryn</a>
                 <a href="#Karlo">Karlo</a>
@@ -72,10 +40,9 @@
                     Due to your device's size... This content may be best viewed on a computer.
             </div>
         </div>
-        <!--<h3 id="download">To view "Joyful Mysteries (Saturday)" for Nanay's Rosary on a Word document, please <a href="files/Joyful Mysteries (Saturday).docx" download>Click Here</a>.</h3>-->
         <div id="mainsection">
-            <p id="howto">The designated reader should read the highlighted section and the non-highlighted sections is to be read by everyone.</p>
-            <h3>Opening Prayers:</h3>
+            <p id="howto"><u>The designated reader should read the highlighted section and the non-highlighted sections is to be read by everyone.</u></p>
+            <h3>Opening Prayers: (Everyone)</h3>
             <ol id="openingprayers">
                 <li><span class="bold">Make the Sign of the Cross:</span> “In the name of the Father, and of the Son, and of the Holy Spirit. Amen.”</li>
                 <li><span class="bold">Say the Apostles’ Creed:</span> “I believe in God, the Father almighty creator of heaven and earth and in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell. On the third day he rose again from the dead. He ascended into heaven and is seated at the right hand of God, the Father almighty. He will come again in glory to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.”</li>
@@ -83,6 +50,7 @@
                 <li><span class="bold">Say three Hail Marys for Faith, Hope, and Charity (3x):</span> “Hail Mary, full of grace. The Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, Pray for us sinners, Now and at the hour of our death. Amen.”</li>
                 <li><span class="bold">Say the Glory Be:</span> “Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
             </ol>
+            <hr>
             <h3 id="JC"><span class="bold"><mark>The First Sorrowful Mystery – The Agony in the Garden</mark>: (JC)</span><img id="JC_Sinigang" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
@@ -90,6 +58,7 @@
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
+            <hr>
             <h3 id="Kathryn"><span class="bold"><mark>The Second Sorrowful Mystery – The Scourging at the Pillar</mark>: (Kathryn)</span><img id="Kathryn_KPopBTS" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
@@ -97,6 +66,7 @@
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
+            <hr>
             <h3 id="Karlo"><span class="bold"><mark>The Third Sorrowful Mystery – The Crowning With Thorns</mark>: (Karlo)</span><img id="Karlo_Laptop" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
@@ -104,6 +74,7 @@
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
+            <hr>
             <h3 id="Kristina"><span class="bold"><mark>The Fourth Sorrowful Mystery – The Carrying of the Cross</mark>: (Kristina)</span><img id="Kristina_BTS" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
@@ -111,6 +82,7 @@
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
+            <hr>
             <h3 id="Kelcie"><span class="bold"><mark>The Fifth Sorrowful Mystery – The Crucifixion and Death of Jesus</mark>: (Kelcie)</span><img id="Kelcie_Gudetama" src=""></h3>
             <ol>
                 <li><span class="bold">Say the Our Father:</span> “<mark>Our Father, who art in heaven hallowed be thy name; thy kingdom come; thy will be done on earth as it is in heaven.</mark> Give us this day our daily bread and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.”</li>
@@ -118,6 +90,7 @@
                 <li><span class="bold">Say the Glory Be:</span> “<mark>Glory be to the Father, and to the Son, and to the Holy Spirit.</mark> As it was in the beginning, is now, and ever shall be, world without end. Amen.”</li>
                 <li><span class="bold">Fatima Prayer:</span> “<mark>O my Jesus, forgive us of our sins. Save us from the fires of hell. Lead all souls into heaven, especially those in most need of thy mercy.</mark>”</li>
             </ol>
+            <hr>
             <h3 id="Nathan"><span class="bold"><mark>Litany of the Blessed Virgin Mary</mark>: (Nathan)</span><img id="Nathan_Dinosaur" src=""></h3>
             <div id="Nathan_Long">
                 <p><mark>Lord, have mercy on us.</mark> Christ, have mercy on us.</p>
@@ -185,14 +158,16 @@
                 <p><mark>Pray for us, O holy Mother of God</mark>, That we may be made worthy of the promises of Christ.</p>
                 <p><mark>Let us pray</mark>, Grant, we beseech you, Lord God, that we your servants may rejoice in continual health of mind and body and, by the glorious intercession of Blessed Mary, ever Virgin, may we be delivered from present sorrow to delight in joy eternal. Through Christ our Lord. Amen.</p>
             </div>
-            <h3><mark>Closing Prayers:</mark></h3>
-            <p class="nathan_note">Any highlighted information below is Nathan Mutuc</p>
+            <hr>
+            <h3>Closing Prayers: (Everyone)</h3>
             <ol>
-                <li><span class="bold"><mark>Hail Holy Queen:</mark></span> Hail Holy Queen, Mother of Mercy, our Life, our Sweetness, and our hope. To thee we cry, poor banished children of Eve. To thee we send up our sighs, mourning and weeping in this vale of tears. Turn then most gracious advocate, thine eyes of mercy toward us, and after this, our exile, show unto us, the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Pray for us O Holy Mother of God, that we may be made worthy of the promises of Christ. Amen.</li>
-                <li><span class="bold"><mark>Final Prayer:</mark></span> Let us pray. O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ Our Lord. Amen.</li>
+                <li><span class="bold">Hail Holy Queen:</span> Hail Holy Queen, Mother of Mercy, our Life, our Sweetness, and our hope. To thee we cry, poor banished children of Eve. To thee we send up our sighs, mourning and weeping in this vale of tears. Turn then most gracious advocate, thine eyes of mercy toward us, and after this, our exile, show unto us, the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary. Pray for us O Holy Mother of God, that we may be made worthy of the promises of Christ. Amen.</li>
+                <li><span class="bold">Final Prayer:</span> Let us pray. O God, whose only begotten Son, by His life, death, and resurrection, has purchased for us the rewards of eternal life, grant, we beseech Thee, that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise, through the same Christ Our Lord. Amen.</li>
                 <li><span class="bold">Make the Sign of the Cross.</span></li>
             </ol>
         </div>
     </div>
+    <script src="js/skipnav.js"></script>
+    <script src="js/imageEasterEgg.js"></script>
 </body>
 </html>
