@@ -83,6 +83,10 @@ p.skipnavigation a:focus {
     background-color: white;
     border-radius: 5px;
 }
+.howto:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* Body section */
 h3#download {
@@ -93,6 +97,7 @@ h3#download {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
 }
 #mainsection h3 {
     font-family: 'Varta', sans-serif;
@@ -100,14 +105,10 @@ h3#download {
 .bold {
     font-weight: bold;
 }
-#Nathan_Long_Highlight p {
-    width: fit-content;
-    background-color: yellow;
-}
 #Nathan_Long p {
     font-family: 'Dosis', sans-serif;
 }
-p#howto {
+p.howto {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
 }
