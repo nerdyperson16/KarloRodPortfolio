@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Rubik&display=swap');
+
+/* Global Variables */
+html, body, a {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+
+/* Skip Navigation */
+p.skipnavigation {
+    float: right;
+}
+p.skipnavigation a {
+    position: absolute;
+    left: -10000px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+p.skipnavigation a:focus {
+    top: 0.4em;
+    left: auto;
+    right: 0.4em;
+    z-index: 2;
+    float: left;
+}
+
+/* Main Section */
+section.main {
+    text-align: center;
+}
+img#main_picture {
+    width: 40%;
+    animation-name: threesixtydegree;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+img#main_picture:hover {
+    animation-name: backtocenter;
+    animation-timing-function: linear;
+    /*animation-play-state: paused;*/
+}
+@keyframes threesixtydegree {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes backtocenter {
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.main .pop {
+    font-size: 40px;
+    margin: 2%;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+}
+.devicesizewarning {
+    display: none;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+}
+
+/* Popup Text */
+span.popuptxt {
+    font-size: 13px;
+    font-style: italic;
+}
+.popuptxt {
+    position: relative;
+    display: inline-block;
+}
+.pop .popuptxt {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    right: 13%;
+    top: 15%;
+}
+.pop .popuptxt:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.pop .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1870px) {
+    img#main_picture {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1195px) {
+    .pop .popuptxt {
+        right: 3%;
+        top: 15%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    img#main_picture {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    img#main_picture {
+        width: 70%;
+    }
+    .pop .popuptxt {
+        right: 3%;
+        top: 10%;
+    }
+}
+@media screen and (max-width: 810px) {
+    .pop .popuptxt:after {
+        top: 100%;
+        left: 90%;
+    }
+    .pop .popuptxt {
+        width: 20%;
+        right: 75%;
+        top: 10%;
+    }
+}
+@media screen and (max-width: 728px) {
+    img#main_picture {
+        width: 100%;
+    }
+    .pop .popuptxt {
+        top: 5%;
+    }
+}
+@media screen and (max-width: 474px) {
+    .pop .popuptxt {
+        top: 1%;
+    }
+}
+@media screen and (max-width: 305px) {
+    img#main_picture {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 249px) {
+    img#main_picture {
+        width: 100%;
+    }
+    .devicesizewarning {
+        display: block;
+        width: 100%;
+    }
+    .pop .popuptxt {
+        display: none;
+    }
+}
