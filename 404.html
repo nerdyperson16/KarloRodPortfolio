@@ -2,6 +2,9 @@
 <head>
     <link rel="icon" href="images/Mango.png">
     <title>Karlo Rodriguez | Error: 404</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <style>
         body {
             width: 50%;
@@ -9,8 +12,8 @@
             height: 100%;
         }
         body p {
-            font-family: Comic Sans MS;
-            font-size: 13px;
+            font-family: 'Comic Neue', cursive;
+            font-size: 18px;
             text-align: center;
         }
         img {
@@ -20,16 +23,101 @@
             display: block;
             border-radius: 5%;
         }
+        #link {
+            background-color: lightgrey;
+            text-decoration: none;
+            color: black;
+            padding: 1%;
+            border-radius: 10px;
+            font-size: 18px;
+            display: none;
+            text-align: center;
+        }
+        #link:hover {
+            background-color: darkgray;
+        }
+        #fade-in { /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+            display: none;
+            animation-name: fadeIn;
+            animation-duration: 20s;
+            -webkit-animation: fadeIn ease 10s;
+            -moz-animation: fadeIn ease 10s;
+            -o-animation: fadeIn ease 10s;
+            -ms-animation: fadeIn ease 10s;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        @-moz-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        @-o-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
+        @-ms-keyframes fadeIn {
+            0% {
+                opacity:0;
+            }
+            100% {
+                opacity:1;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>There seems to be an issue - Error 404 : No Directory</h1>
+    <h1>There seems to be an issue - Error 404 : No File Directory</h1>
     <hr>
-    <p>Hmm... That's weird! I wonder why there's no website directory for this. I was probably at IKEA getting some Swedish Meatballs when I must've stumbled and added some code that directs you to nowhere</p>
-    <p>I still wonder why this directory doesn't exist. Something I have to look over. No matter, just click the back button on your browser and head back to my website. I'll figure it out as soon as possible if I can figure it out.</p>
-    <p>While you're here though, think about what made you stumble here... Was it because you were trying to find some secrets on this site or there was literally no link.</p>
-    <p>If you don't mind, email me at contact@karlostevenr.page and tell me what happened. It could help me a lot!</p>
-    <p>Well don't want to leave you hanging... Here's a picture of my favorite drink. I'll let you reverse image it yourself.</p>
-    <img src="images/Thai_Tea.jpg" alt="Thai Tea (if you don't want to reverse-image it yourself)">
+    <p>Argh!!! It happened again. No website directory. I have no idea whether you clicked something or tried typing something after www.karlostevenr.page/... Honestly, I'm frankly confused on how you got here. You're probably wondering how to get out of here. Just click the left arrow on the top to go back to the page you were just in or you can just type in a brand new URL.</p>
+    <p>While you're here though, let me tell you all a story.</p>
+    <p id="demo"></p>
+    <p><a id="link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></p>
+    <div id="fade-in">
+        <img src="images/patrick.png">
+    </div>
+
+    <script>
+        var i = 0;
+        var txt = "A wise man named Spongebob Squarepants said, F is for friends who do stuff together. I said, U is for you and me. Can you get what N means? Yes, you're right. N means N is for anywhere and anytime at all. Am I wasting your time? I probably am. Lol. Are you still here? Well, I don't want you to head out that fast. Let me show you my favorite YouTube video.";
+        var speed = 50;
+
+        typeWriter();
+        
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+            if (i == txt.length) {
+                document.getElementById("link").style.display = "block";
+                document.getElementById("fade-in").style.display = "block";
+            }
+            
+        }
+    </script>
+
 </body>
 </html>
