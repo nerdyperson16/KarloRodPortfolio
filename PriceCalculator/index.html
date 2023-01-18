@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="images/Mango.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Cabin&family=Comic+Neue&family=Lexend+Deca&family=Quicksand&family=Urbanist&display=swap" rel="stylesheet">
+        <title>Karlo Rodriguez</title>
+    </head>
+    <body>
+        <p class="skipnavigation"><a href="#">Skip Navigation</a></p>
+
+        <p id="iewarning">You're currently using Internet Explorer which is a current outdated browser. There may be features that don't work properly or don't look correct. It is recommended to use Google Chrome, Mozilla Firefox, Microsoft Edge, or other modern day browsers.</p>
+        
+        <button onclick="scrollDetection()" id="skipnavbutton" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+        <div id="background_color">
+
+            <header>
+                <div class="topnav" id="topnavbutton">
+                    <h3>Karlo Rodriguez</h3>
+                    <div id="floatright">
+                        <a href="https://www.karlostevenr.page/">Back To Portfolio Site</a>
+                        <a href="#about">About</a>
+                        <a href="#productCalculation">Product Calculator</a>
+                        <a href="#taxCalculation">Tax Calculator</a>
+                        <a href="javascript:void(0);" class="icon" onclick="navbarhamburger()">
+                        <i class="fa fa-bars"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div id="transparent_image">
+                <img id="myself" src="images/Karlo2022.png" alt="Karlo Rodriguez in a mask" title="Thank you to my sister for creating this awesome photo of me through ProCreate. Created on 12/27/2021.">
+                <div id="image_text">
+                    <h1>Karlo's Super Awesome Extravagant Financial Utility Service</h1>
+                    <p>The best internal financial algebraic calculator based on a bus ride to university</p>
+                </div>
+            </div>
+
+        </div>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to Karlo's Super Awesome Extravagant Financial Utility Service webpage. I know, a long name right? This page is designed to provide financial-related support through the patent-pending (legally speaking, never filed a patent at all), Karlo Calculator! What is the Karlo Calculator, you ask? This is the Karlo Calculator! Here, you'll find the product calculator where you can determine which product is cheaper with different quantities. Or, use the awesome Tax Calculations portion! Where you can calculate prices through the use of tax! My state of the art JavaScript rounding system will help you on your way to round the prices so you don't have to. This page is mainly designed for me to practice on my JavaScript skills while working on HTML and making myself not go insane inside Target. Take this with a grain of salt also on any data you gather here since the calculator was created by a procrastinating college student. Therefore, welcome to the Karlo Calculator! A Financial Utility Service Webpage.</p>
+            <br />
+            <p>By the way, if you're looking for my portfolio website, here it is: <a href="https://www.karlostevenr.page/">Visit Portfolio Website</a></p>
+        </section>
+
+        <hr>
+
+        <section id="productCalculation">
+            <h2>Product Calculator</h2>
+            <form action="javascript:calculateProduct()">
+                <br />
+                <h3>Product A</h3>
+                <input type="number" id="quantityA" placeholder="Quantity Value" required>
+                <br />
+                <input type="double" id="priceA" placeholder="Price" required>
+                <br />
+                <br />
+                <h3>Product B</h3>
+                <input type="number" id="quantityB" placeholder="Quantity Value" required>
+                <br />
+                <input type="double" id="priceB" placeholder="Price" required>
+                <br />
+                <input type="submit" value="Submit" class="button">
+            </form>
+            <p id="betterProduct"></p>
+            <p id="productAPerOne"></p>
+            <p id="productBPerOne"></p>
+        </section>
+
+        <hr>
+
+        <section id="taxCalculation">
+            <h2>Tax Calculations</h2>
+                <form action="javascript:calculateTax()">
+                    <label for="subtotal">* Enter the subtotal price</label>
+                    <input type="double" id="subtotal" placeholder="Subtotal Value" required>
+                    <br />
+                    <label for="subtotal">* Enter the tax rate (Ex. 50, 25.5) (Do not enter the percentage sign)</label>
+                    <input type="double" id="tax" placeholder="Tax Rate (in percent)" required>
+                    <br />
+                    <input type="submit" value="Submit" class="button">
+                </form>
+                <p id="demo"></p>
+                <p id="demoTwo"></p>
+                <p id="demoThree"></p>
+                <p id="demoFour"></p>
+                <p id="demoFive"></p>
+                <p id="demoSix"></p>
+        </section>
+
+        <hr>
+    
+        <footer>
+            <p>This website was created by myself (Karlo Rodriguez) by scratch. I have used resources like W3schools and Stack Overflow. This is not a CMS-based website and was coded using HTML & CSS.</p>
+            <br />
+            <p>Created on January 9, 2023 at 20:22 PM (PST); Updated on January 17, 2023</p>
+            <br />
+            <p>If there are any errors or broken links, please contact me at: contact@karlostevenr.page.</p>
+        </footer>
+        <script src="globaljs.js"></script>
+        <script>
+            function calculateProduct() {
+
+                var productAQty = document.getElementById("quantityA").value;
+                var productBQty = document.getElementById("quantityB").value;
+
+                var productAPrice = document.getElementById("priceA").value;
+                var productBPrice = document.getElementById("priceB").value;
+
+                var pricePerA = productAPrice/productAQty;
+                var pricePerB = productBPrice/productBQty;
+                
+                var pricePerARounded = roundValue(pricePerA);
+                var pricePerBRounded = roundValue(pricePerB);
+
+                var priceCalcB = pricePerARounded - pricePerBRounded;
+                var priceCalcA = pricePerBRounded - pricePerARounded;
+
+                if(pricePerARounded > pricePerBRounded) {
+                    document.getElementById("betterProduct").innerHTML = "Product B is cheaper than Product A by $" + roundValue(priceCalcB);
+                } else if (pricePerARounded < pricePerBRounded) {
+                    document.getElementById("betterProduct").innerHTML = "Product A is cheaper than Product B by $" + roundValue(priceCalcA);
+                }
+
+                document.getElementById("productAPerOne").innerHTML = "Product A: $" + pricePerARounded + "/1 Quantity";
+                document.getElementById("productBPerOne").innerHTML = "Product B: $" + pricePerBRounded + "/1 Quantity";
+            }
+
+            function roundValue(value) {
+                var totalValue = value; // Gathers the total value
+                var totalArray = (""+totalValue).split(""); // Converts the number into an array [phase 1]
+                var oldArray = (""+totalValue).split(""); // Covers the older array
+                var decimalLocation; // Declaring the decimalLocation variable
+                var a; // Placeholder variables
+                var b; // Placeholder variables
+                var numsBeforeDecimal; // number before decimal value in the array
+                var decimalLocationTwo; // second decimal location variable to avoid conflicts between decimal location
+                var outcome; // the official outcome of the values
+
+                // Divides Everything Accordingly After The Decimal
+                for(var i=0; i<totalArray.length; i++) { // Starts with finding the values after the decimal
+                    if(totalArray[i] == ".") { // Finds the . in the array
+                        decimalLocation = i+1; // Tells decimalLocation variable where in the array has the decimal
+                        for(var i=0; i<decimalLocation; i++) {
+                            totalArray.shift();
+                        }
+                    }
+                }
+                
+
+                // Rounds the Numbers
+                if(totalArray.length > 2) {  // Checks the new array's length if it's more than 2
+                    if(totalArray[2] >= 5) { // If the third value in the array is greater than or equal to 5
+                        a = totalArray[1]; // Takes the second value of the array
+                        a = parseInt(a) + 1; // Adds one to the second value of the array
+                        b = totalArray[0] + a; // Take only the 1st value and the new value (that was added by 1) to the array
+
+                        if(b.length > 2) { // Bug Fix: If the numbers after the decimal is 3 #'s, it will instead add the first value by 1 and convert the second value to 0
+                            a = parseInt(totalArray[0]) + 1;
+                            b = a + 0;
+                        }
+                        
+                    } else if(totalArray[2] < 5) { // If the third value in the array is less than or equal to 4
+                        b = totalArray[0] + totalArray[1]; // Take only the 1st and 2nd value of the array
+                    }
+                } else if (totalArray.length > 1) {
+                    b = totalArray[0] + totalArray[1];
+                } else if (totalArray.length == 1) {
+                    b = totalArray[0];
+                }
+
+                // Places Everything Back Together
+                for(var i=0; i<oldArray.length; i++) { // Loops through the old array's length
+                    if(oldArray[i] == ".") { // Finds the old array's decimal value
+                        decimalLocationTwo = i; // Tells the decimal location 2 where the decimal is
+                        for(var a=0; a<decimalLocationTwo; a++) { // Loops again on the values before the decimal
+                            if(numsBeforeDecimal == undefined) { // Avoids undefined values because there is nothing in the numsBeforeDecimal variable
+                                numsBeforeDecimal = oldArray[a]; // Places the first number in the variable ONLY
+                            } else {
+                                numsBeforeDecimal = numsBeforeDecimal + oldArray[a]; // Places the second number in the variable before adding the first number
+                            }
+                        }
+                    }
+                }
+
+                outcome = numsBeforeDecimal + "." + b // Gives the official outcome before the decimal and after the decimal
+
+                if (numsBeforeDecimal == undefined) {
+                    return total;
+                } else {
+                    return outcome;
+                }
+            }
+
+
+            function calculateTax() { // One of the most stupidest, dumb, and lengthy codes that I spent 2 hours on. It was worth it!
+                var subtotal = document.getElementById("subtotal").value;
+                var tax = document.getElementById("tax").value;
+
+                var taxtodouble = (tax/100);
+
+                document.getElementById("demo").innerHTML = "Subtotal: $" + subtotal;
+                document.getElementById("demoTwo").innerHTML = "Tax Rate: $" + taxtodouble;
+                
+                var taxValue = subtotal * taxtodouble;
+
+                var total = taxValue + parseFloat(subtotal);
+
+                document.getElementById("demoThree").innerHTML = "Tax Value: $" + taxValue;
+                document.getElementById("demoFour").innerHTML = "Total: $" + total;
+
+                // Line Break
+
+                var totalValue = total; // Gathers the total value
+                var totalArray = (""+totalValue).split(""); // Converts the number into an array [phase 1]
+                var oldArray = (""+totalValue).split(""); // Covers the older array
+                var decimalLocation; // Declaring the decimalLocation variable
+                var a; // Placeholder variables
+                var b; // Placeholder variables
+                var numsBeforeDecimal; // number before decimal value in the array
+                var decimalLocationTwo; // second decimal location variable to avoid conflicts between decimal location
+                var outcome; // the official outcome of the values
+
+                document.getElementById("demoFive").innerHTML = "Original Array: " + totalArray; // Displays phase 1
+
+                // Divides Everything Accordingly After The Decimal
+                for(var i=0; i<totalArray.length; i++) { // Starts with finding the values after the decimal
+                    if(totalArray[i] == ".") { // Finds the . in the array
+                        decimalLocation = i+1; // Tells decimalLocation variable where in the array has the decimal
+                        for(var i=0; i<decimalLocation; i++) {
+                            //totalArray.splice(i, 1); // Deletes the first and the decimal values of the array
+                            totalArray.shift();
+                        }
+                        //totalArray.splice(1, 1); // Removes the unnecessary leftover # (first object) in the array.
+                        //totalArray.shift();
+                    }
+                }
+                
+
+                // Rounds the Numbers
+                if(totalArray.length > 2) {  // Checks the new array's length if it's more than 2
+                    if(totalArray[2] >= 5) { // If the third value in the array is greater than or equal to 5
+                        a = totalArray[1]; // Takes the second value of the array
+                        a = parseInt(a) + 1; // Adds one to the second value of the array
+                        b = totalArray[0] + a; // Take only the 1st value and the new value (that was added by 1) to the array
+
+                        if(b.length > 2) { // Bug Fix: If the numbers after the decimal is 3 #'s, it will instead add the first value by 1 and convert the second value to 0
+                            a = parseInt(totalArray[0]) + 1;
+                            b = a + 0;
+                        }
+                        
+                    } else if(totalArray[2] < 5) { // If the third value in the array is less than or equal to 4
+                        b = totalArray[0] + totalArray[1]; // Take only the 1st and 2nd value of the array
+                    }
+                } else if (totalArray.length > 1) {
+                    b = totalArray[0] + totalArray[1];
+                } else if (totalArray.length == 1) {
+                    b = totalArray[0];
+                }
+
+                // Places Everything Back Together
+                for(var i=0; i<oldArray.length; i++) { // Loops through the old array's length
+                    if(oldArray[i] == ".") { // Finds the old array's decimal value
+                        decimalLocationTwo = i; // Tells the decimal location 2 where the decimal is
+                        for(var a=0; a<decimalLocationTwo; a++) { // Loops again on the values before the decimal
+                            if(numsBeforeDecimal == undefined) { // Avoids undefined values because there is nothing in the numsBeforeDecimal variable
+                                numsBeforeDecimal = oldArray[a]; // Places the first number in the variable ONLY
+                            } else {
+                                numsBeforeDecimal = numsBeforeDecimal + oldArray[a]; // Places the second number in the variable before adding the first number
+                            }
+                        }
+                    }
+                }
+
+                outcome = numsBeforeDecimal + "." + b // Gives the official outcome before the decimal and after the decimal
+
+                document.getElementById("demoSix").innerHTML = "$" + outcome; // Printing the outcome
+
+                if (numsBeforeDecimal == undefined) {
+                    document.getElementById("demoSix").innerHTML = "$" + total; // Printing the outcome
+                }
+                
+            }
+        </script>
+    </body>
+</html>
