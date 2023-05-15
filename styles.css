@@ -218,6 +218,19 @@ section ul.normal li a:hover {
     color: black;
 }
 
+/* Article Notes */
+section.articleNotes h2 {
+    text-align: left;
+}
+section.articleNotes p {
+    text-align: left;
+    font-size: 16px;
+}
+section.articleNotes ol {
+    font-family: 'Baloo 2', cursive;
+    margin-left: 100px;
+}
+
 /* hr Tag */
 hr {
     width: 80%;
@@ -514,6 +527,9 @@ footer a:active {
     .icon-bar {
         display: none;
     }
+    iframe {
+        width: auto;
+    }
 }
 @media screen and (max-width: 650px) {
     .overlaytext {
@@ -528,6 +544,9 @@ footer a:active {
 @media screen and (max-width: 540px) {
     #certifications a {
         width: 70%;
+    }
+    section.articleNotes ol {
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 370px) {
