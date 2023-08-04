@@ -187,8 +187,7 @@ ol > li:before { /* To help the ordered lists for numbers to become bold. Audite
 /* Responsive Design section */
 @media screen and (max-width:770px) {
     #skipNav {
-        font-size: 9px;
-        padding: 7.5px;
+        right: 1%;
     }
     #logo {
         float: none;
