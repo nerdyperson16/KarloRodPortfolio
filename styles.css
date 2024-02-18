@@ -2,7 +2,7 @@
     Karlo Rodriguez - Online Portfolio
     styles.css
     Created: August 12, 2020 at 10:23 PM (PST)
-    Updated: October 28, 2022
+    Updated: February 17, 2024
 */
 
 /* "Why is it whenever I'm having fun, it's wrong" - Squidward Tentacles */
@@ -266,6 +266,26 @@ hr {
     background-color: darkgray;
 }
 
+/* Manual Modification - Volunteering Experience */
+#teachexperience {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#teachexperience button {
+    padding: 0.7%;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: lightgray;
+    border: transparent;
+    margin: 0.5%;
+    font-family: 'Baloo 2', cursive;
+}
+#teachexperience button:hover {
+    background-color: darkgray;
+}
+
 /* Manual Modification - Certifications */
 #certifications a {
     background-color: lightgray;
@@ -480,7 +500,7 @@ footer a:active {
         text-align: left;
     }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1240px) {
     #transparent_image {
         display: none;
     }
@@ -496,6 +516,19 @@ footer a:active {
         text-align: center;
     }
     #experience button {
+        display: table-cell;
+        padding: 1%;
+        font-size: 23px;
+        border-radius: 8px;
+        background-color: lightgray;
+        border: transparent;
+        margin: 0.5%;
+        width: 90%;
+    }
+    #teachexperience {
+        text-align: center;
+    }
+    #teachexperience button {
         display: table-cell;
         padding: 1%;
         font-size: 23px;
