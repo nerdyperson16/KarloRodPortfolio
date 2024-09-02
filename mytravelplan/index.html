@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <title>MyTravelPlan</title>
+    </head>
+    <body>
+        <nav class="navBar" id="jsNavBar"> <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+            <p>Select the location you want to head to, by order</p>
+            <a href="#toWestlake">Westlake Station</a>
+            <a href="#asean">Asean Street Food Hall</a>
+            <a href="#toSeaCenter">Seattle Monorail (Seattle Center)</a>
+            <a href="#mopop">MoPOP</a>
+            <a href="#toWestlakeMono">Seattle Monorail (Westlake)</a>
+            <a href="#toArtly">Artly Coffee</a>
+            <a href="#toPike">Pike Place Market</a>
+            <a href="#toWestSea">Water Taxi (West Seattle)</a>
+            <a href="#toMarination">Marination Ma Kai</a>
+            <a href="#toHome">Go Home</a>
+            <a href="javascript:void(0);" class="icon" onclick="respNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        
+        <div id="container">
+            <div id="origin">
+                <h1>Welcome to MyTravelPlans</h1>
+                <p>To get started, select the hamburger icon on the top corner right to begin.</p>
+                <p>Remember! On public transport, Only Tap On. <mark>Don't Tap Off.</mark></p>
+            </div>
+            <hr>
+            <div id="toWestlake">
+                <h1>1st Stop: <a href="https://maps.app.goo.gl/5JgJeNoaC2AmFTb2A">Westlake Station</a></h1>
+                <p>From Tukwila Intl. Blvd. Station, head to Westlake Station. This can take around 30 minutes. You will pass Intl. District/Chinatown Station.</p>
+                <p>When you arrive at the station, you will head up the escalator and look for this picture below. Look for the green service desk station. You'll make a right afterwards.</p>
+                <img src="images/westlakestation.jpg" alt="Westlake Station Customer Service Desk">
+            </div>
+            <hr>
+            <div id="asean">
+                <h1>2nd Stop: <a href="https://maps.app.goo.gl/KQWC4bfzStWdTZgj6">Asean Street Food Hall</a></h1>
+                <p>When you exit the station, you will need to find Westlake Center mall. On the picture, it shows the direction you should go.</p>
+                <p>You need to pass UNIQLO. You should see it on your way to Westlake Center.</p>
+                <img src="images/directiontoAsean.png" alt="To Asean Street Food Hall from Westlake Station">
+            </div>
+            <hr>
+            <div id="toSeaCenter">
+                <h1>3rd Stop: Seattle Monorail to Seattle Center</h1>
+                <p>From Asean Street Food Hall, enter Westlake Center mall and find the escalators. You need to head to the third floor. Follow the signs.</p>
+                <p><mark>DO NOT USE THE ELEVATOR! IT WILL NOT LEAD YOU TO THE MONORAIL.</mark></p>
+                <p>Once at the Seattle Monorail station, use your ORCA card to tap at the gate. There are only 2 ORCA card station readers on the front entrance. <mark>LOOK AT THE FLOOR AND FIND THE ORCA CARD READER SIGN OR THE ORCA CARD READER.</mark></p>
+                <p>FYI: The Monorail is open Monday-Friday: 7:30am-11:00pm. You also have only 1 station. I will laugh at you if you get lost at the Seattle Monorail.</p>
+                <p>DO NOT TAP OFF ON THE MONORAIL AT THE END OF THE STATION.</p>
+                <img src="images/monorail.png" alt="Seattle Monorail Station - Seattle Center">
+            </div>
+            <hr>
+            <div id="mopop">
+                <h1>4th Stop: <a href="https://maps.app.goo.gl/5CMhjGxZXHyTnhEq9">Museum of Pop Culture</a></h1>
+                <p>You're going to exit the monorail station. Head over to the direction the picture shows (turn left from the station).</p>
+                <p>Continue straight until you see MoPOP. Head to any entrance, make sure you have your ticket ready.</p>
+                <img src="images/seattlecenter.png" alt="Seattle Center to MoPOP">
+            </div>
+            <hr>
+            <div id="toWestlakeMono">
+                <h1>5th Stop: Seattle Monorail to Westlake Center</h1>
+                <p>You'll need to head from MoPOP to the Seattle Monorail station. Psst! Look for the Space Needle. It's across from there.</p>
+                <p>As a reminder, you need find on the floor the ORCA card reader. Look at the floor for the ORCA card reader!!!</p>
+                <p>DO NOT TAP OFF ON THE MONORAIL AT THE END OF THE STATION.</p>
+                <img src="images/monorail2.png" alt="Seattle Center to Westlake Center">
+            </div>
+            <hr>
+            <div id="toArtly">
+                <h1>6th Stop: <a href="https://maps.app.goo.gl/gF5eD35cGTg7NcSL6">Artly Coffee</a></h1>
+                <p>Have Google Maps ready to Artly Coffee in Stewart Street.</p>
+                <p>Once you exit the monorail, follow the arrow like the picture to Macy's.</p>
+                <p>Make sure to continue straight and keep going straight towards the water.</p>
+                <p>If you pass by UNIQLO, you're going in the right direction.</p>
+                <p>Continue straight until you see 2nd Avenue. Like the picture, cross the street and turn right. Continue straight afterwards.</p>
+                <img src="images/artlycoffee1.png">
+                <p>On the first corner (Stewart Street), turn left. Don't cross the street.</p>
+                <img src="images/artlycoffee2.png">
+                <p>Continue straight until you see Artly Coffee. Look closely.</p>
+                <p>It will be on your left.</p>
+                <img src="images/artlycoffee3.png">
+            </div>
+            <hr>
+            <div id="toPike">
+                <h1>7th Stop: Pike Place Market</h1>
+                <p>From Artly Coffee's front entrance, turn left and continue straight to the waterfront.</p>
+                <img src="images/pikeplace.png" alt="Pike Place Market from Artly Coffee">
+            </div>
+            <hr>
+            <div id="toWestSea">
+                <h1>8th Stop: <a href="https://maps.app.goo.gl/L6zrHgX1mKthoSu68">To the West Seattle Water Taxi</a></h1>
+                <p><a href="https://maps.app.goo.gl/mzmMNHB2q8CqnzZ69">Click here for Google Maps to the Westlake Station light rail</a></p>
+                <p>Follow the map until you find the light rail station. You will need to take it to the Water Taxi.</p>
+                <img src="images/directiontoAsean.png" alt="Westlake Station">
+                <p>Once in the station, go to <mark>Symphony Station</mark>. You need to go to the Airport/Angle Lake train.</p>
+                <img src="images/toWaterTaxi.jpg" alt="Westlake Station to Symphony">
+                <p>You should ride the train for a short time. It's only 1 stop.</p>
+                <p><a href="https://maps.app.goo.gl/oh8FFEyGzYiRpoye8">Click this link to head to Top Pot Doughnuts before the Water Taxi.</a></p>
+                <p>Follow Google Maps. It is critical that you cross the intersection to Marion Street. If that doesn't make sense, be on the side where the destroyed building is.</p>
+                <img src="images/toTopPotDoughnut.png" alt="To Top Pot Doughnuts">
+                <p>Once you're done eating at the doughnut place, head to the Seattle Ferry Terminal and find the elevators. Head down the elevator. Do not head inside the ferry terminal.</p>
+                <p><a href="https://maps.app.goo.gl/BSA3WZUG3Crc4Wwv8">Click here to go to the water taxi once you head down the elevator.</a></p>
+                <p><a href="https://kingcounty.gov/en/dept/metro/travel-options/water-taxi/west-seattle#toc-sailing-schedule">Here is the Water Taxi schedule, if you need it.</a></p>
+                <p><mark>HEAD TO THE WEST SEATTLE WATER TAXI!</mark></p>
+            </div>
+            <hr>
+            <div id="#toMarination">
+                <h1>9th Stop: To Marination Ma Kai</h1>
+                <p>Once you leave the water taxi, continue straight on the pier to Marination. You can't miss it.</p>
+                <p>Here are the hours for Marination Ma Kai</p>
+                <img src="images/marinationhours.png" alt="Marination Ma Kai hours">
+            </div>
+            <hr>
+            <div id="toHome">
+                <h1>Final Stop: <a href="https://maps.app.goo.gl/HkUcEBXn7UFx4f4B8">Let's go Home!</a></h1>
+                <p>Here are the hours for Marination Ma Kai</p>
+                <p>Head on the Water Taxi going back to Seattle. There is only one water taxi, so you can't miss it.</p>
+                <p>Once you're back in Seattle, you need to head to Symphony Station on the bus.</p>
+                <p><a href="https://maps.app.goo.gl/HPLVQzsvL7pQimZ59">Click here to take the bus to Symphony Station</a></p>
+                <p><a href="https://maps.app.goo.gl/Jpz253ayq8tAMJoX7">Click here to walk to Symphony Station</a></p>
+                <p>If you're taking the bus, the bus stop should look like this.</p>
+                <img src="images/bustosymphony.png" alt="Bus to Symphony">
+                <p>Once at Symphony Station, head to the Angle Lake/Airport train.</p>
+                <img src="images/toTukwila.jpg" alt="Symphony Station to Tukwila">
+                <p>Once you're on the train, it's back to Tukwila Light Rail Station.</p>
+                <p>Good Job! You did it.</p>
+            </div>
+        </div>
+
+        <script>
+            function respNav() {
+                var x = document.getElementById("jsNavBar");
+                if (x.className == "navBar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navBar";
+                }
+            }
+        </script>
+    </body>
+</html>
