@@ -2,7 +2,7 @@
     Karlo Rodriguez - Online Portfolio
     styles.css
     Created: August 12, 2020 at 10:23 PM (PST)
-    Updated: February 17, 2024
+    Updated: March 28, 2025
 */
 
 /* "Why is it whenever I'm having fun, it's wrong" - Squidward Tentacles */
@@ -328,6 +328,38 @@ hr {
     text-align: center;
 }
 
+/* TP Website */
+.TPWebsite {
+    background-color: lightgray;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: table;
+    margin: 1%;
+    padding: 0.8%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Baloo 2', cursive;
+}
+.TPWebsite:hover {
+    background-color: darkgray;
+}
+a#TPWebsite2 {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+a#TPWebsite2:hover {
+    text-decoration: underline;
+}
+#technologyprograms {
+    text-align: center;
+}
+#technologyprograms a {
+    color: black;
+}
+
 /* Overlay Section */
 .overlay {
     position: fixed;
@@ -424,40 +456,6 @@ a.easteregg:active {
 .interviewvideo p a {
     text-decoration: none;
     color: black;
-}
-
-/* Contact Page */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-family: Arial;
-}
-input[type=submit] {
-    background-color: lightgray;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: Arial;
-}
-#submission_center {
-    text-align: center;
-}
-input[type=submit]:hover {
-    background-color: darkgray;
-}
-.contact_section {
-    border-radius: 5px;
-    padding: 20px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Footer Section */

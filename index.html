@@ -2,7 +2,7 @@
     Karlo Rodriguez - Online Portfolio
     index.html
     Created: August 12, 2020 at 10:23 PM (PST)
-    Updated: February 17, 2024
+    Updated: September 10, 2025
 -->
 
 <!-- Because you found the source code of the website, it seems you can find all the classes for "easteregg" on the website. -->
@@ -30,7 +30,6 @@
         <div class="icon-bar">
             <a href="https://www.linkedin.com/in/karlorod/" class="linkedin" title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="files/Karlo's Resume.pdf" download class="resume" title="Resume" target="_blank"><i class="fa fa-file" aria-hidden="true"></i></a>
-            <a href="https://www.catchafire.org/profiles/714602/" download class="volunteering" title="Catchafire" target="_blank"><i class="fa fa-users" aria-hidden="true"></i></a>
             <a href="https://github.com/nerdyperson16" download class="github" title="GitHub" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
         </div>
 
@@ -48,7 +47,6 @@
                         <a href="#references">References</a>
                         <a href="#certifications">Certifications</a>
                         <a href="#references_sites">Site References</a>
-                        <a href="#contact">Contact</a>
                         <a href="javascript:void(0);" class="icon" onclick="navbarhamburger()">
                         <i class="fa fa-bars"></i></a>
                     </div>
@@ -61,9 +59,9 @@
                     <p>My name is <a class="easteregg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Karlo Rodriguez</a></p>
                     <h1>I am a student at the University of Washington Bothell</h1>
                     <p>I worked as an afterschool program leader, orientation leader, and worked/volunteered with I.T.-related services and support</p>
-                    <form action="#contact">
+                    <!--<form action="#contact">
                         <button style="font-family: 'Baloo 2', cursive;">Contact me here</button>
-                    </form>
+                    </form>-->
                 </div>
             </div>
 
@@ -71,7 +69,7 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>My name is Karlo Rodriguez. I am a second-year student at the University of Washington Bothell, majoring in a Bachelor of Arts in Educational Studies with a minor in Information Technology. I <a onclick="funVideo()">volunteered</a> and worked in multiple organizations such as the University of Washington Bothell, Greater Maple Valley Community Center, Kentwood Parent Teacher Student Association, Bag It (Cancer Support), and PeerGuide Tutoring Services. I am knowledgeable in Computer Hardware and technical support for Windows, iOS, and Android. I have over 2-3 years of teaching/instructional experience and I provide friendly customer services and client relations. I deliver excellent communication and strong administrative skills to any work enviornment.</p>
+            <p>My name is Karlo Rodriguez. I am a fourth-year student at the University of Washington Bothell, majoring in a Bachelor of Arts in Educational Studies with a minor in Child & Youth Development, and a student at Green River College majoring in an Associate in Applied Science Transfer degree in Information Technology with a concentration in Cybersecurity & Networking. I <a onclick="funVideo()">volunteered</a> and worked in multiple organizations such as the University of Washington Bothell, Greater Maple Valley Community Center, Kentwood Parent Teacher Student Association, Bag It (Cancer Support), and PeerGuide Tutoring Services. I am knowledgeable in Computer Hardware and technical support for Windows, iOS, and Android. I have over 2-3 years of teaching/instructional experience and I provide friendly customer services and client relations. I deliver excellent communication and strong administrative skills to any work enviornment.</p>
         </section>
 
         <hr>
@@ -79,7 +77,8 @@
         <section id="education">
             <h2>Education</h2>
             <ul class="normal">
-                <li><a href="https://www.uwb.edu/education/" target="_blank">University of Washington Bothell - B.A. in Educational Studies and minoring in Information Technology [Expected 2026]</a></li>
+                <li><a href="https://www.uwb.edu/education/" target="_blank">University of Washington Bothell - B.A. in Educational Studies and minoring in Child & Youth Development [Expected 2026]</a></li>
+                <li><a href="https://catalog.greenriver.edu/preview_program.php?catoid=10&poid=3994" target="_blank">Green River College - AAS-T in Information Technology with a concentration in Cybersecurity & Networking [Expected 2027]</a></li>
                 <li><a href="https://www.kent.k12.wa.us/Domain/29" target="_blank">Kentwood Senior High School - High School Diploma [2018 - 2022]</a></li>
             </ul>
         </section>
@@ -89,7 +88,8 @@
         <section id="employment">
             <h2>Employment</h2>
             <ul class="normal">
-                <li><a href="https://library.uwb.edu/" target="_blank">University of Washington Bothell & Cascadia College Campus Library - Student Technology Consultant [October 2023 - Present]</a></li>
+                <li><a href="https://www.uwb.edu/admissions/" target="_blank">University of Washington Bothell Office of Admissions - Student Ambassador [March 2024 - Present]</a></li>
+                <li><a href="https://library.uwb.edu/" target="_blank">University of Washington Bothell & Cascadia College Campus Library - Student Technology Consultant [October 2023 - June 2025]</a></li>
                 <li><a href="https://www.uwb.edu/orientation/" target="_blank">University of Washington Bothell - Orientation Leader [March 2023 - September 2023]</a></li>
                 <li><a href="https://www.kentwa.gov" target="_blank">City of Kent, Washington - Jr. All Stars Recreation Leader [September 2021 - June 2022]</a></li>
             </ul>
@@ -150,9 +150,29 @@
                 <div class="overlaytext">I created lesson plans, course materials, presentations, and taught JavaScript through Code.org App Lab. This is while also teaching and learning new ways to become a instructor for students grade 7-12. I also coordinated guided curriculum for this course which included programming basics, U.S. Copyright regulations, ethical data skills, and proctored mini-games for students. This course was taught at the Greater Maple Valley Community Center over the summer.</div>
             </div>
 
+            <button onclick="openOverlay('gmvcc2')">Web Design 101</button>
+            <div id="gmvcc2" class="overlay" onclick="closeOverlay('gmvcc2')">
+                <div class="overlaytext">I created course materials, presentations, and taught basic Web Design (HTML/CSS) using Microsoft Visual Studio Code. I also coordinated guided curriculum for this course which included programming basics, U.S. Copyright regulations, ethical programming skills, and proctored mini-games for students. This course was taught at the Greater Maple Valley Community Center over the Autumn season as part of my Applied Experience program at UW Bothell.</div>
+            </div>
+
+            <button onclick="openOverlay('gmvcc3')">Computer Literacy</button>
+            <div id="gmvcc3" class="overlay" onclick="closeOverlay('gmvcc3')">
+                <div class="overlaytext">I created lesson plans, course materials, presentations, and taught Computer Literacy to students at a community center. This is while also teaching and learning new ways to become a instructor for students in the process. I also coordinated guided curriculum for this course which included basics in technology, basic internet searching skills, Microsoft Office/Google Workspace training, and cybersecurity skills. This course was taught at the Greater Maple Valley Community Center over the Autumn season as part of my Applied Experience program at UW Bothell.</div>
+            </div>
+
             <button onclick="openOverlay('uwbol')">University of Washington Bothell Orientation Leader</button>
             <div id="uwbol" class="overlay" onclick="closeOverlay('uwbol')">
                 <div class="overlaytext">Orientation leaders lead and assist orientation-related programs for first-year students, transfer students, and parent/family orientation. Orientation leaders lead small groups of 10-20 students through campus tours, activities, and ensuring they have an understanding of the university resources and programs available. Led a student network called the LGBTQIA+ New Student Network for many orientations.</div>
+            </div>
+
+            <button onclick="openOverlay('uwbsa')">University of Washington Bothell Student Ambassador</button>
+            <div id="uwbsa" class="overlay" onclick="closeOverlay('uwbsa')">
+                <div class="overlaytext">Student Ambassadors provide campus tours at the University of Washington Bothell. Ambassadors also assists in housing events, engage with prospective students and families, and showcase resources for new students to the university. Ambassadors also help with front desk services for the Office of Admissions such as providing customer support services through phone and in-person. This is also completing office-related tasks.</div>
+            </div>
+
+            <button onclick="openOverlay('uwbstc')">UWB/CC Campus Library Student Technology Consultant</button>
+            <div id="uwbstc" class="overlay" onclick="closeOverlay('uwbstc')">
+                <div class="overlaytext">A technology consultant assists library patrons with printing services and technical support help for Mac/PC computers. Consultants also utilize customer service skills and assist with circulating technology. In the position, it is expected to learn more about new troubleshooting methods for technology to become better informed about how to solve certain tech issues for students.</div>
             </div>
 
         </section>
@@ -233,12 +253,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/SinglePlanner_App.PNG" alt="SinglePlanner App" style="width:100%">
+                    <img src="images/PlannedWay_App.png" alt="PlannedWay App" style="width:100%">
                     <div class="card_text">
-                        <h4><b>SinglePlanner</b></h4> 
+                        <h4><b>PlannedWay</b></h4> 
                         <p>Online app-based planner</p>
                         <br />
-                        <form action="https://studio.code.org/projects/applab/zwiPDbS5jEjfngAXz3WR7y5sKvYV_AGg7dGRCGCYr5U" target="_blank">
+                        <form action="https://studio.code.org/projects/applab/ylsPbsd6jF1eMxbRMqmwgELjO3IUA68TEtVC4pHdVnE" target="_blank">
                             <button>Visit app</button>
                         </form>
                     </div>
@@ -265,17 +285,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="images/KarloDesign.PNG" alt="KarloDesign Web Development Services" style="width:100%">
-                    <div class="card_text">
-                        <h4><b>KarloDesign Web Development Services</b></h4> 
-                        <p>Business Website</p>
-                        <br />
-                        <form action="https://nerdyperson16.github.io/KarloDesign/" target="_blank">
-                            <button>Visit website</button>
-                        </form>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -296,10 +305,26 @@
             <h2>The Husky Herald Newspaper Articles</h2>
             <p>I have written articles for The Husky Herald, which is the University of Washington Bothell's student-run news publication paper. Below are some newspaper articles that I have written about, which can be viewed on <a href="https://thehuskyherald.com/" target="_blank" style="text-decoration: none; color: black;">The Husky Herald's website</a>.</p>
             <br />
-            <a href="https://thehuskyherald.com/january-2023/" target="_blank" class="hhd">This SpongeBob SquarePants Episode Exposes School Awards [Page 9]</a>
+            <a href="https://thehuskyherald.com/2025/03/20/is-your-life-boring-as-explained-by-spongebob-squarepants/" target="_blank" class="hhd">Is Your Life Boring? As Explained By SpongeBob SquarePants [Online Article]</a>
+            <a href="https://thehuskyherald.com/october-november24/" target="_blank" class="hhd">Should You Go on Strike? As Explained by SpongeBob SquarePants [Page 10]</a>
             <a href="https://thehuskyherald.com/september-23/" target="_blank" class="hhd">How to Be a Good Roommate as Explained by SpongeBob SquarePants [Page 10]</a>
+            <a href="https://thehuskyherald.com/january-2023/" target="_blank" class="hhd">This SpongeBob SquarePants Episode Exposes School Awards [Page 9]</a>
             <br />
             <p style="font-weight: bold; color: red; font-size: 16px;">If you cannot view the newspaper article, please contact me at <a href="mailto:karlo_rodriguez@karlostevenr.page" style="color: red; text-decoration: none;">karlo_rodriguez@karlostevenr.page</a>.</p>
+        </section>
+
+        <hr>
+
+        <section id="technologyprograms">
+            <h2>Technology Programs</h2>
+            <p>I have created a series of courses, called the Technology Programs, that I teach at local community centers and organizations, offering free technology literacy and programming basics to students.</p>
+            <br />
+            <p>I created curriculum for JavaScript Programming 101 & Computer Literacy, taught courses for all three courses (JavaScript Programming 101, Web Design 101, and Computer Literacy), created advertisements & lesson plans (including with course syllabuses), and supervised students and communicated with parents/guardians & community center staff on course logistics.</p>
+            <br />
+            <p>Many of the courses have been taught primarily at the <a href="https://www.maplevalleycc.org/">Greater Maple Valley Community Center</a>, under the supervision of the Youth Programs Director & Program Assistant. Courses have also been taught as part of the Applied Experience program at the <a href="https://www.uwb.edu/education/undergraduate/educational-studies/degree-requirements#applied-experience-guidelines">University of Washington Bothell School of Educational Studies</a>.</p>
+            <br />
+            <a href="https://sites.google.com/view/technologyprogramswa/home" target="_blank" class="TPWebsite">Visit the Technology Programs website here</a>
+            <a href="https://sites.google.com/view/technologyprogramswa/home" id="TPWebsite2">https://sites.google.com/view/technologyprogramswa/home</a>
         </section>
 
         <hr>
@@ -313,40 +338,6 @@
             </div>
             <hr>
         </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Let's get to know each other.</p>
-
-            <div class="contact_section">
-
-                <form action="mailto:karlo_rodriguez@karlostevenr.page" method="post" enctype="text/plain">
-
-                    <label for="fname">Full Name</label>
-
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                    <label for="email">Email</label>
-
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-
-                    <label for="message">Message</label>
-
-                    <textarea id="message" name="message" placeholder="What would you like to say?" style="height:200px"></textarea>
-
-                    <div id="submission_center">
-                        <input type="submit" value="Submit">
-                    </div>
-
-                </form>
-
-            </div>
-
-            <br />
-            <p>If you don't have an email application client, you can email myself at <a style="text-decoration: none; color: black;" href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a></p>
-        </section>
-
-        <hr>
     
         <footer>
             <p>This website was created by myself (Karlo Rodriguez) by scratch. I have used resources like W3schools and Stack Overflow. This is not a CMS-based website and was coded using HTML & CSS.</p>
@@ -355,9 +346,9 @@
             <br />
             <p><a href="https://www.karlostevenr.page/coco" target="_blank">Click here for the Coconut website I made on my free time.</a></p>
             <br />
-            <p>Created on August 16, 2020 at 19:54 PM (PST); Updated on February 17, 2024</p>
+            <p>Let's get in touch and grab a cup of coffee! Email me at: <a href="mailto:karlo_rodriguez@karlostevenr.page">karlo_rodriguez@karlostevenr.page</a>.</p>
             <br />
-            <p>This website has had a major update on features, text, and easter eggs. If there are any errors or broken links, please contact me at: contact@karlostevenr.page.</p>
+            <p>Created on August 16, 2020 at 19:54 PM (PST); Updated on September 13, 2025</p>
         </footer>
         <script src="globaljs.js"></script>
     </body>
