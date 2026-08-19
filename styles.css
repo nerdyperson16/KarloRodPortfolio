@@ -2,7 +2,7 @@
     Karlo Rodriguez - Online Portfolio
     styles.css
     Created: August 12, 2020 at 10:23 PM (PST)
-    Updated: March 28, 2025
+    Updated: August 18, 2026
 */
 
 /* "Why is it whenever I'm having fun, it's wrong" - Squidward Tentacles */
@@ -481,12 +481,12 @@ footer a:active {
 }
 
 /* Responsive design mode */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1600px) {
     #image_text {
         left: 15%;
     }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1540px) {
     #image_text {
         top: 20%;
         left: 10%;
@@ -495,7 +495,7 @@ footer a:active {
         width: 80%;
     }
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1540px) {
     .topnav a:not(:last-child) {
         display: none;
     }
@@ -519,7 +519,7 @@ footer a:active {
         text-align: left;
     }
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1540px) {
     #transparent_image {
         display: none;
     }
